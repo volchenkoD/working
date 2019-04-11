@@ -380,11 +380,11 @@ table {
   position: relative;
 }
 .main-page .catalog_background .catalog .goods img {
-  width: 70px;
-  background-color: #10cabf;
+  width: 45px;
+  height: auto;
   position: absolute;
   top: 15px;
-  left: 17px;
+  left: 29px;
 }
 .main-page .wrapper-6 {
   display: grid;
