@@ -129,7 +129,7 @@ table {
 h2 {
   font-size: 32px;
   font-family: 'Philosopher', sans-serif;
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 40px;
 }
 .items {
@@ -152,12 +152,13 @@ h2 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto 702px 729px 622px 276px;
+  grid-template-rows: auto auto auto auto 729px 622px 276px;
   font-family: 'Roboto', sans-serif;
   color: #602750;
   /*первый экран*/
   /*блок спецпредложения*/
   /*Каталог*/
+  /*секция о компании*/
 }
 .main-page a {
   text-decoration: none;
@@ -368,21 +369,27 @@ h2 {
 .main-page .catalog_background {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 300px);
+  grid-template-rows: repeat(3, auto);
   background: url(/img/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
   color: white;
+  /*кнопка перехода в каталог*/
+}
+.main-page .catalog_background .catalog {
+  /*иконки товаров*/
 }
 .main-page .catalog_background .catalog .about_goods {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(3, auto);
   font-size: 18px;
   font-family: 'Philosopher', sans-serif;
+  /*порядовка*/
 }
 .main-page .catalog_background .catalog .about_goods .left_goods,
 .main-page .catalog_background .catalog .about_goods .right_goods {
   display: grid;
   grid-template-columns: auto;
+  /*общие стили для иконок*/
 }
 .main-page .catalog_background .catalog .about_goods .left_goods .goods,
 .main-page .catalog_background .catalog .about_goods .right_goods .goods {
@@ -391,8 +398,9 @@ h2 {
   height: 102px;
   border-radius: 100%;
   position: relative;
+  margin-left: 70px;
   margin-bottom: 40px;
-  margin-left: 30px;
+  /*индивидуальные стили*/
 }
 .main-page .catalog_background .catalog .about_goods .left_goods .goods a,
 .main-page .catalog_background .catalog .about_goods .right_goods .goods a {
@@ -439,11 +447,47 @@ h2 {
   top: 23px;
   left: 28px;
 }
-.main-page .catalog_background .wrapper-6 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px;
+.main-page .catalog_background .btn {
+  padding: 20px 70px;
+  background-color: #10cabf;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 18px;
+  margin-left: 300px;
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
-.main-page .catalog_background .wrapper-6 .items {
-  height: 400px;
+.main-page .about_company {
+  background-color: #fff;
+}
+.main-page .about_company .company {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  padding: 70px 0;
+}
+.main-page .about_company .company .company_images img {
+  width: 400px;
+  height: auto;
+  margin-right: 25px;
+}
+.main-page .about_company .company .company_text h2 {
+  margin-top: 0;
+}
+.main-page .about_company .company .company_text p {
+  font-size: 16px;
+  font-family: 'Philosopher', sans-serif;
+  line-height: 20px;
+}
+.main-page .about_company .company .company_text .btn {
+  padding: 20px 70px;
+  background-color: #10cabf;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 18px;
+  margin-top: 160px;
 }
