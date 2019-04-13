@@ -45,6 +45,12 @@ table {
 *{
     box-sizing: border-box;
 }
+h2{
+    font-size: 32px;
+    font-family: 'Philosopher', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
 .items{
     border: 1px solid blue;
 }
@@ -210,13 +216,7 @@ table {
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto auto auto;
-                /*Заголовок*/
-                h2{
-                    margin-top: 50px;
-                    margin-bottom: 40px;
-                    font-size: 32px;
-                    font-family: 'Philosopher', sans-serif;;
-                }
+                /*карточка*/
                 .card{
                     border: 5px solid #4f095c;
                     padding: 25px 50px;
@@ -295,18 +295,42 @@ table {
             background: url(/img/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
             color: white;
             .catalog{
-                .goods{
-                    background-color: #fff;
-                    width: 102px;
-                    height: 102px;
-                    border-radius: 100%;
-                    position: relative;
-                    img{
-                        width: 45px;
-                        height: auto;
-                        position: absolute;
-                        top: 15px;
-                        left: 29px;
+                .about_goods{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: repeat(3, 100px);
+                    font-size: 18px;
+                    font-family: 'Philosopher', sans-serif;
+                    .left_goods, .right_goods{
+                        display: grid;
+                        grid-template-columns: auto;
+
+                        .goods{
+                            background-color: #fff;
+                            width: 102px;
+                            height: 102px;
+                            border-radius: 100%;
+                            position: relative;
+                            margin-bottom: 40px;
+                            margin-left: 30px;
+                            a{
+                                text-decoration: none;
+                                color: white;
+                            }
+
+                            p{
+                                position: absolute;
+                                top: 35px;
+                                left: 150px;
+                            }
+                            img{
+                                width: 45px;
+                                height: auto;
+                                position: absolute;
+                                top: 15px;
+                                left: 29px;
+                            }
+                         }
                     }
                 }
             }
