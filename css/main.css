@@ -152,13 +152,15 @@ h2 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto 729px 622px 276px;
+  grid-template-rows: auto auto auto auto  auto 729px 622px 276px;
   font-family: 'Roboto', sans-serif;
   color: #602750;
   /*первый экран*/
   /*блок спецпредложения*/
   /*Каталог*/
   /*секция о компании*/
+  /* секция с хитами продаж*/
+  /*секция с преимуществами*/
 }
 .main-page a {
   text-decoration: none;
@@ -455,7 +457,7 @@ h2 {
   color: white;
   font-family: 'Philosopher', sans-serif;
   font-size: 18px;
-  margin-left: 300px;
+  margin-left: 270px;
   margin-top: 40px;
   margin-bottom: 100px;
 }
@@ -467,6 +469,7 @@ h2 {
   grid-template-columns: auto auto;
   grid-template-rows: auto;
   padding: 70px 0;
+  border-bottom: 2px solid #10cabf;
 }
 .main-page .about_company .company .company_images img {
   width: 400px;
@@ -490,4 +493,40 @@ h2 {
   font-family: 'Philosopher', sans-serif;
   font-size: 18px;
   margin-top: 160px;
+}
+.main-page .about_hits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: 'Philosopher', sans-serif;
+}
+.main-page .about_hits .hit_goods {
+  border: #5a1a4a 3px solid;
+  padding: 10px;
+  margin-left: 10px;
+  position: relative;
+}
+.main-page .about_hits .hit_goods img {
+  position: relative;
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+  left: 55px;
+}
+.main-page .about_hits .hit_goods h4,
+.main-page .about_hits .hit_goods p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.main-page .about_hits .hit_goods .safe {
+  width: 100px;
+}
+.main-page .about_hits .hit_goods .btn {
+  padding: 15px;
+  background-color: #10cabf;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 16px;
+  margin-left: 25px;
 }
