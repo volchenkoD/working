@@ -413,11 +413,37 @@ h2 {
   top: 15px;
   left: 29px;
 }
-.main-page .wrapper-6 {
+.main-page .catalog_background .catalog .about_goods .left_goods .goods .stell,
+.main-page .catalog_background .catalog .about_goods .right_goods .goods .stell {
+  top: 22px;
+}
+.main-page .catalog_background .catalog .about_goods .left_goods .goods .hosp,
+.main-page .catalog_background .catalog .about_goods .right_goods .goods .hosp {
+  width: 40px;
+  top: 12px;
+  left: 32px;
+}
+.main-page .catalog_background .catalog .about_goods .left_goods .goods .safe,
+.main-page .catalog_background .catalog .about_goods .right_goods .goods .safe,
+.main-page .catalog_background .catalog .about_goods .left_goods .goods .verst,
+.main-page .catalog_background .catalog .about_goods .right_goods .goods .verst,
+.main-page .catalog_background .catalog .about_goods .left_goods .goods .metall,
+.main-page .catalog_background .catalog .about_goods .right_goods .goods .metall {
+  width: 60px;
+  top: 26px;
+  left: 23px;
+}
+.main-page .catalog_background .catalog .about_goods .left_goods .goods .metall,
+.main-page .catalog_background .catalog .about_goods .right_goods .goods .metall {
+  width: 50px;
+  top: 23px;
+  left: 28px;
+}
+.main-page .catalog_background .wrapper-6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 400px;
 }
-.main-page .wrapper-6 .items {
+.main-page .catalog_background .wrapper-6 .items {
   height: 400px;
 }
