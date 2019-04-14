@@ -152,7 +152,7 @@ h2 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto  auto auto auto 276px;
+  grid-template-rows: auto auto auto auto  auto auto auto auto;
   font-family: 'Roboto', sans-serif;
   color: #602750;
   /*первый экран*/
@@ -625,4 +625,50 @@ h2 {
   font-family: 'Philosopher', sans-serif;
   font-size: 16px;
   margin-bottom: 90px;
+}
+.main-page footer {
+  background: url(/img/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
+  color: #10cabf;
+}
+.main-page footer .footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 50px;
+}
+.main-page footer .footer nav {
+  display: inline-flex;
+  justify-content: space-between;
+  align-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: -25px;
+  margin-top: 7px;
+}
+.main-page footer .footer nav a {
+  color: #10cabf;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+.main-page footer .footer nav ul {
+  padding-top: 10px;
+}
+.main-page footer .footer nav li {
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: none;
+}
+.main-page footer .footer nav .sochial {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 70px;
+  left: -300px;
+}
+.main-page footer .footer .footer_cont {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 10px;
 }
