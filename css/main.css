@@ -223,7 +223,7 @@ h2 {
   line-height: 24px;
 }
 .main-page .first-page .header_background_color .header nav a:hover {
-  color: #000;
+  color: #10cabf;
 }
 .main-page .first-page .page_title {
   position: relative;
@@ -498,6 +498,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   font-family: 'Philosopher', sans-serif;
+  margin-bottom: 70px;
 }
 .main-page .about_hits .hit_goods {
   border: #5a1a4a 3px solid;
@@ -507,7 +508,7 @@ h2 {
 }
 .main-page .about_hits .hit_goods img {
   position: relative;
-  width: 100px;
+  width: 117px;
   height: auto;
   margin-bottom: 20px;
   left: 55px;
@@ -518,7 +519,7 @@ h2 {
   margin-bottom: 10px;
 }
 .main-page .about_hits .hit_goods .safe {
-  width: 100px;
+  height: 250px;
 }
 .main-page .about_hits .hit_goods .btn {
   padding: 15px;
