@@ -152,7 +152,7 @@ h2 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto  auto 729px 622px 276px;
+  grid-template-rows: auto auto auto auto  auto auto 622px 276px;
   font-family: 'Roboto', sans-serif;
   color: #602750;
   /*первый экран*/
@@ -530,4 +530,34 @@ h2 {
   font-family: 'Philosopher', sans-serif;
   font-size: 16px;
   margin-left: 25px;
+}
+.main-page .advantage {
+  background: url(/img/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
+}
+.main-page .advantage .advantage_img {
+  display: grid;
+  grid-template-rows: auto repeat(2, 1fr);
+}
+.main-page .advantage .advantage_img h2 {
+  color: #10cabf;
+}
+.main-page .advantage .advantage_img .adv {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main-page .advantage .advantage_img .adv .advanta {
+  width: 225px;
+  height: 275px;
+  background-color: #fff;
+  position: relative;
+}
+.main-page .advantage .advantage_img .adv .advanta img {
+  width: 225px;
+  height: 164px;
+}
+.main-page .advantage .advantage_img .adv .advanta p {
+  text-align: center;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 16px;
+  padding: 30px 20px 0 20px;
 }
