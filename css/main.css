@@ -152,7 +152,7 @@ h2 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto  auto auto 622px 276px;
+  grid-template-rows: auto auto auto auto  auto auto auto 276px;
   font-family: 'Roboto', sans-serif;
   color: #602750;
   /*первый экран*/
@@ -161,6 +161,7 @@ h2 {
   /*секция о компании*/
   /* секция с хитами продаж*/
   /*секция с преимуществами*/
+  /*Секция с контактами*/
 }
 .main-page a {
   text-decoration: none;
@@ -503,7 +504,7 @@ h2 {
 .main-page .about_hits .hit_goods {
   border: #5a1a4a 3px solid;
   padding: 10px;
-  margin-left: 10px;
+  margin-right: 10px;
   position: relative;
 }
 .main-page .about_hits .hit_goods img {
@@ -536,14 +537,17 @@ h2 {
 }
 .main-page .advantage .advantage_img {
   display: grid;
-  grid-template-rows: auto repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  /*карточки*/
+  /*кнопка секции*/
 }
 .main-page .advantage .advantage_img h2 {
   color: #10cabf;
 }
 .main-page .advantage .advantage_img .adv {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, auto);
+  /*стили для карточек*/
 }
 .main-page .advantage .advantage_img .adv .advanta {
   width: 225px;
@@ -560,4 +564,65 @@ h2 {
   font-family: 'Philosopher', sans-serif;
   font-size: 16px;
   padding: 30px 20px 0 20px;
+}
+.main-page .advantage .advantage_img .btn {
+  margin-top: 65px;
+  padding: 20px 70px;
+  background-color: #10cabf;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 18px;
+  margin-bottom: 90px;
+  margin-left: 330px;
+}
+.main-page .contacts {
+  background: url(/img/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
+  position: relative;
+  /*сетка для контактов*/
+}
+.main-page .contacts:before {
+  background-color: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main-page .contacts .contacts_maps {
+  display: grid;
+  grid-template-columns: auto auto;
+  /*стили для карты*/
+  /*стили для контактов*/
+}
+.main-page .contacts .contacts_maps .maps img {
+  border: #4f095c 2px solid;
+  width: 550px;
+  height: 405px;
+  margin: 70px 0 90px 0;
+}
+.main-page .contacts .contacts_maps .contacts_all {
+  position: relative;
+  margin-left: 25px;
+  margin-top: 35px;
+  color: white;
+  font-family: 'Philosopher', sans-serif;
+  /*стили кнопки*/
+}
+.main-page .contacts .contacts_maps .contacts_all p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.main-page .contacts .contacts_maps .contacts_all .btn {
+  margin-top: 65px;
+  padding: 20px 40px;
+  background-color: #10cabf;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 16px;
+  margin-bottom: 90px;
 }
