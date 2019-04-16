@@ -1,0 +1,221 @@
+@media (max-width: 576px){
+
+}
+@media (max-width: 768px) {
+    .container{
+        max-width: 724px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 24px;
+        font-family: 'Philosopher', sans-serif;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .main-page{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto  auto auto auto auto;
+        background: url(/img/768size.png) no-repeat center center;
+        .first-page{
+            .header_background_color{
+                height: 90px;
+                .header{
+
+                    .logo{
+                        margin-top: 5px;
+                        img{
+                            width: 60px;
+                        }
+                    }
+                    nav{
+                        visibility: hidden;
+                    }
+                }
+            }
+            .page_title{
+                margin-top: 75px;
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 24px;
+                }
+                /*блок с картинками*/
+            }
+            .first-page_img{
+                margin-top: 115px;
+                /*картинки*/
+                .img_first{
+                    position: relative;
+                    width: 70px;
+                    height: 70px;
+                    left: 130px;
+                }
+                span{
+                    font-size: 14px;
+                    line-height: 18px;
+
+                }
+                .first_span{
+                    position: absolute;
+                    left: 220px;
+                    top: 20px;
+                }
+                .second_span{
+                    position: absolute;
+                    left: 580px;
+                    top: 20px;
+                }
+            }
+            /*блок с кнопокой*/
+            .header_button{
+                margin-top: 80px;
+                .btn{
+                    padding: 15px 40px;
+                    font-size: 12px;
+                    margin-bottom: 45px;
+                }
+            }
+        }
+        .sale_bacground{
+            background-color: #e4dddb;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            /*начало блока*/
+            .sale_block{
+                /*карточка*/
+                .card{
+                    border: 5px solid #4f095c;
+                    padding: 15px 30px;
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    grid-template-rows: auto;
+
+                    img{
+                        width: 250px;
+                        height: 330px;
+                    }
+                    /*блок с описанием*/
+                    .card_title{
+                        position: relative;
+                        margin-left: 20px;
+                        h3{
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 20px;
+                            padding-bottom: 20px;
+                            font-weight: bold;
+                        }
+                        li{
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-weight: bold;
+                        }
+                        li:nth-child(2n):not(:last-child){
+                                position: relative;
+                                margin-left: 0px;
+                                top: 0px;
+                        }
+                        li:last-child{
+                            margin-top: 0px;
+                        }
+                        .price{
+                            margin-top: 40px;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        .btn{
+                            position: relative;
+                            padding: 15px 40px;
+                            font-size: 12px;
+                            margin-bottom: 0px;
+                            top: -70px;
+                            left: 120px;
+                        }
+                    }
+                }
+                /*Нижний скрол*/
+                .scroll{
+                    display: inline-flex;
+                    justify-content: center;
+                    align-content: space-between;
+                    .circle_scroll{
+                        width: 14px;
+                        height: 14px;
+                        background-color: #4f095c;
+                        border-radius: 100%;
+                        margin: 15px 30px;
+                        &:hover{
+                            background-color: #10cabf;
+                        }
+                    }
+                }
+            }
+        }
+        /*Каталог*/
+        .catalog_background{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, auto);
+            background: url(/img/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
+            color: white;
+            .catalog{
+                /*иконки товаров*/
+                .about_goods{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    grid-template-rows: repeat(3, auto);
+                    font-size: 16px;
+                    font-family: 'Philosopher', sans-serif;
+                    /*порядовка*/
+                    .left_goods, .right_goods{
+                        display: grid;
+                        grid-template-columns: auto;
+                        /*общие стили для иконок*/
+                        .goods{
+                            p{
+                                position: absolute;
+                                top: 35px;
+                                left: 120px;
+                            }
+                        }
+                    }
+                }
+            }
+            /*кнопка перехода в каталог*/
+            .btn{
+            padding: 15px 40px;
+            font-size: 14px;
+            margin-bottom: 40px;
+            position: relative;
+            left: -30px;
+            }
+        }
+    }
+    /*секция о компании*/
+    .about_company{
+
+        .company{
+            padding: 20px 0;
+            .company_images{
+                height: 500px;
+                .company_images .img_comp{
+                    width: 400px;
+                    height: 500px;
+                    margin-right: 25px;
+                }
+            }
+            .company_text{
+                .btn{
+                    visibility: hidden;
+                    margin-top: -160px;
+                }
+            }
+        }
+    }
+
+}
