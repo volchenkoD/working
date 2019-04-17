@@ -548,49 +548,35 @@
                 /*иконки товаров*/
                 .about_goods{
                     display: grid;
-                    grid-template-columns: auto auto;
-                    grid-template-rows: repeat(3, auto);
+                    grid-template-columns: auto;
+                    grid-template-rows: repeat(6, auto);
                     font-size: 16px;
                     font-family: 'Philosopher', sans-serif;
-                    /*порядовка*/
-                    .left_goods, .right_goods{
-                        display: grid;
-                        grid-template-columns: auto;
-                        /*общие стили для иконок*/
-                        .goods{
-                            p{
-                                position: absolute;
-                                top: 35px;
-                                left: 120px;
-                            }
-                        }
-                    }
+                    padding-left: 60px;
+                    margin-top: 50px;
                 }
             }
             /*кнопка перехода в каталог*/
             .btn{
-            padding: 15px 40px;
+            padding: 15px 50px;
             font-size: 14px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             position: relative;
-            left: -30px;
+            left: -150px;
             }
         }
         .about_company{
             .company{
-                padding: 70px 0;
                 .company_images{
-                    height: 500px;
-                    margin-bottom: 50px;
-                    .company_images .img_comp{
-                        width: 400px;
-                        height: auto;
-                        margin-right: 25px;
-                    }
+                    display: none;
                 }
                 .company_text{
+                    
                     .btn{
-                        display: none;
+                        display: block;
+                        font-size: 14px;
+                        margin-top: 30px;
+                        margin-left: 90px;
                     }
                 }
             }
@@ -599,35 +585,12 @@
             padding-left: 10px;
             .about_hits{
                 display: grid;
-                grid-template-columns: repeat(2, auto);
-                grid-template-rows: auto auto;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
                 font-family: 'Philosopher', sans-serif;
                 margin-bottom: 50px;
-                .hit_goods{
-                    border: #5a1a4a 3px solid;
-                    padding: 10px;
-                    margin: 20px;
-                    position: relative;
-                    height: 200px;
-                    img{
-                        position: relative;
-                        width: 80px;
-                        height: auto;
-                        margin-bottom: 20px;
-                        left: 0px;
-                    }
-                    h4, p{
-                        display: flex;
-                        text-align: right;
-                        margin-bottom: 10px;
-                        left: 50px;
-                        position: relative;
-                        left: 120px;
-                        top: -180px;
-                    }
-                    .safe{
-                        height: 169px;
-                    }
+                .hit_goods:not(:first-child){
+                   display: none;
                     .btn{
                         padding: 15px;
                         background-color: #10cabf;
@@ -645,16 +608,14 @@
         }
         .advantage{
             .advantage_img{
-                display: grid;
-                grid-template-rows: repeat(3, auto);
                 h2{
                     color: #10cabf;
                 }
                 /*карточки*/
                 .adv{
                     display: grid;
-                    grid-template-rows: repeat(2, auto);
-                    grid-template-columns: repeat(2, auto);
+                    grid-template-rows: repeat(4, auto);
+                    grid-template-columns: none;
                     padding: 0px 60px 60px 60px;
                     /*стили для карточек*/
                     .advanta{
@@ -666,7 +627,7 @@
                     margin-top: 0px;
                     font-size: 16px;
                     margin-bottom: 70px;
-                    margin-left: 220px;
+                    margin-left: 70px;
                 }
             }
         }
@@ -681,7 +642,7 @@
                     img{
                     border: #4f095c 2px solid;
                     width: 100%;
-                    height: 500px;
+                    height: 300px;
                     margin: 70px 0 30px 0;
                     }
                 }
@@ -704,15 +665,7 @@
                     }
                 }
                 .btn{
-                    margin-top: 65px;
-                    padding: 20px 40px;
-                    background-color: #10cabf;
-                    border-radius: 10px;
-                    border: none;
-                    color: white;
-                    font-family: 'Philosopher', sans-serif;
-                    font-size: 16px;
-                    margin-bottom: 90px;
+                    display: none;
                 }
             }
         }
@@ -738,16 +691,17 @@
                     }
                     #sochial{
                         img{
-                            width: 40px;
-                            height: 40px;
+                            width: 30px;
+                            height: 30px;
+                            color: #4f095c;
                         }
-                        display: flex;
+                        display: block;
                         a{
-                        display: inline-block;
-                        padding-left: 20px;
+                        display: block;
+                        padding-bottom: 20px;
                         position: relative;
-                        top: 40px;
-                        left: 580px;
+                        top: -290px;
+                        left: 460px;
                             :first-child{
                                  left: 560px;
                             }
