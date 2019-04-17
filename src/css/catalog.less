@@ -1,0 +1,37 @@
+.header_background_color{
+    background: rgba(202, 194, 178, .6)
+    height: 140px;
+        /*блок header*/
+        .header{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            justify-items: center;
+            align-items: center;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            /*логотип и навигация*/
+            /*логотип*/
+            .logo{
+                width: 50%;
+                color: #5a1a4a;
+                margin-top: 14px;
+            }
+            /*навигация*/
+            nav{
+                display: inline-flex;
+                justify-content: space-between;
+                align-content: center;
+                font-weight: 700;
+                text-transform: uppercase;
+                a{
+                    padding-right: 50px;
+                    margin-top: 20px;
+                    line-height: 24px;
+                    &:hover{
+                        color: #10cabf;
+                        }
+                }
+            }
+        }
+}

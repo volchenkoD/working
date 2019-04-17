@@ -11,7 +11,8 @@ const less = require('gulp-less');
 //Массив файлов стилей
 const cssFiles = [
     './src/css/main.less',
-    './src/css/media.less'
+    './src/css/media.less',
+    './src/css/catalog.less'
 ]
 //Массив файлов скриптов
 const jsFiles = [
