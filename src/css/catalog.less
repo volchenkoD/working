@@ -1,37 +1,302 @@
-.header_background_color{
-    background: rgba(202, 194, 178, .6)
-    height: 140px;
-        /*блок header*/
-        .header{
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*основные стили*/
+*{
+    box-sizing: border-box;
+}
+h2{
+    font-size: 32px;
+    font-family: 'Philosopher', sans-serif;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.container{
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+.catalog_pages{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    font-family: 'Roboto', sans-serif;
+    color: #602750;
+    a{
+        text-decoration: none;
+        color: #602750;
+    }
+    .header_background_color{
+        background: rgba(202, 194, 178, .6);
+        position: relative;
+        height: 140px;
+            /*блок header*/
+            .catalog_header{
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto;
+                justify-items: center;
+                align-items: center;
+                margin-top: 10px;
+                padding-bottom: 10px;
+                /*логотип и навигация*/
+                /*логотип*/
+                .logo{
+                    width: 50%;
+                    color: #5a1a4a;
+                    margin-top: 14px;
+                }
+                /*навигация*/
+                nav{
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-content: center;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding: 10px;
+                    a{
+                        margin-right: 50px;
+                        margin-top: 20px;
+                        line-height: 24px;
+                        &:hover{
+                            color: #10cabf;
+                            border-bottom: 1px #10cabf solid;
+                            }
+                    }
+                }
+            }
+    }
+    .food_pieces{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        a{
+            margin: 10px;
+            padding: 10px;
+            &:hover{
+                color: #10cabf;
+            }
+        }
+    }
+    .catalog_background{
+        background-color: rgba(202, 194, 178, 1);
+        .catalog_about{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(3, 450px);
+            padding-bottom: 40px;
+            .left, .right{
+                margin-top: 40px;
+                background: url(/img/bg/catalog_bg.png) no-repeat;
+                width: 450px;
+                &:hover{
+                    background: url(/img/bg/catalog_bg_2.png) no-repeat;
+                }
+            }
+            .right{
+                position: relative;
+                left: -30px;
+            }
+            .catalog_goods{
+                p{
+                    position: relative;
+                    top: 85px;
+                    left: 60px;
+                    font-weight: bold;
+                }
+                .img1{
+                    position: relative;
+                    left: 150px;
+                    top: 80px;
+                }
+                .img2{
+                    position: relative;
+                    left: 120px;
+                    top: 10px;
+                }
+                .img3{
+                    position: relative;
+                    left: 40px;
+                    top: 50px
+                }
+                .safe1{
+                    width: 180px;
+                    left: 100px;
+                    top: 100px;
+                }
+                .safe2{
+                    width: 300px;
+                    height: 350px;
+                    left: 140px;
+                    top: -300px;
+                }
+                .safe3{
+                    left: -20px;
+                    top: -300px;
+                }
+                .med1{
+                    width: 60%;
+                    left: 40px;
+                    top: 80px;
+                }
+                .med2{
+                    width: 200px;
+                    left: 180px;
+                    top: -240px;
+                }
+                .med3{
+                    left: 80px;
+                    top: -170px;
+                }
+                .prof1{
+                    width: 245px;
+                    left: 30px;
+                    top: 100px;
+                }
+                .prof2{
+                    left: 0px;
+                    top: 0px;
+                }
+                .prof3{
+                    left: -120px;
+                    top: 50px;
+                }
+                .st1{
+                    width: 150px;
+                    left: 100px;
+                    top: 130px;
+                }
+                .st2{
+                    width: 175px;
+                    left: 80px;
+                    top: 20px;
+                }
+                .st3{
+                    left: -50px;
+                    top: 60px
+                }
+                .meb1{
+                    left: 50px;
+                    height: 250px;
+                }
+                .meb2{
+                    width: 185px;
+                    left: -50px;
+                    top: -50px;
+                }
+                .meb3{
+                    top: 10px;
+                    left: 280px;
+                }
+                &:hover{
+                    p{
+                        color: #10cabf;
+                    }
+                    .img3{
+                        color: #10cabf;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        background: url(/img/bg/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
+        color: #10cabf;
+        .footer{
             display: grid;
             grid-template-columns: auto auto;
-            grid-template-rows: auto;
-            justify-items: center;
-            align-items: center;
-            margin-top: 10px;
-            padding-bottom: 10px;
-            /*логотип и навигация*/
-            /*логотип*/
-            .logo{
-                width: 50%;
-                color: #5a1a4a;
-                margin-top: 14px;
-            }
-            /*навигация*/
+            margin-top: 50px;
             nav{
                 display: inline-flex;
                 justify-content: space-between;
                 align-content: center;
                 font-weight: 700;
                 text-transform: uppercase;
+                margin-left: -25px;
+                margin-top: 7px;
                 a{
-                    padding-right: 50px;
-                    margin-top: 20px;
-                    line-height: 24px;
-                    &:hover{
-                        color: #10cabf;
+                    color: #10cabf;
+                    padding-right: 20px;
+                    padding-bottom: 10px;
+                    &:not(:first-child){
+                        display: none;
+                    }
+                }
+                ul{
+                    padding-top: 10px;
+                }
+                li{
+                    padding-bottom: 10px;
+                    font-size: 14px;
+                    font-weight: normal;
+                    text-transform: none;
+                }
+                #sochial{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                    display: flex;
+                    a{
+                    height: 40px;
+                    display: inline-block;
+                    padding-left: 20px;
+                    padding-top: 20px;
+                    position: relative;
+                    top: 100px;
+                    left: 580px;
+                        :first-child{
+                             left: 560px;
                         }
+                    }
                 }
             }
+            .footer_cont{
+                font-family: 'Philosopher', sans-serif;
+                font-size: 16px;
+                line-height: 24px;
+                padding-bottom: 10px;
+                text-align: right;
+            }
         }
+    }
 }
