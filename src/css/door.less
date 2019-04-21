@@ -1,4 +1,4 @@
-.catalog_pages{
+.about_main{    
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
@@ -59,123 +59,85 @@
             }
         }
     }
-    .catalog_background{
-        background-color: rgba(202, 194, 178, 1);
-        .catalog_about{
+    .about_door{
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        h2{
+            font-size: 24px;
+        }
+        .img_door{
             display: grid;
-            grid-template-columns: repeat(2, auto);
-            grid-template-rows: repeat(3, 450px);
-            padding-bottom: 40px;
-            .left, .right{
-                margin-top: 40px;
-                background: url(/img/bg/catalog_bg.png) no-repeat;
-                width: 450px;
-                &:hover{
-                    background: url(/img/bg/catalog_bg_2.png) no-repeat;
+            grid-template-columns: repeat(3, auto);
+            .full_img{
+                img{
+                    &:nth-child(2){
+                        padding-left: 35px;
+                    }
                 }
             }
-            .right{
-                position: relative;
-                left: -30px;
+            .pieces{
+                display: grid;
+                grid-template-rows: repeat(2, auto);
+                img{
+                    &:nth-child(2){
+                        padding-top: 15px;
+                    }
+                }
             }
-            .catalog_goods{
+            .text_img{
+                display: grid;
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                ul{
+                    li{
+                        font-family: 'Philosopher', sans-serif;
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                }
+                .img_text{
+                    img{
+                        display: block;
+                        &:nth-child(2){
+                            padding-top: 35px;
+                        }
+                    }
+                }
+            }
+        }
+        .pieces_img{
+            display: grid;
+            grid-template-columns: repeat(2, 200px);
+            font-family: 'Philosopher', sans-serif;
+            font-size: 18px;
+            margin-top: 35px;
+            margin-bottom: 105px;
+            .left_pieces, .right_pieces{
                 p{
-                    position: relative;
-                    top: 85px;
-                    left: 60px;
-                    font-weight: bold;
+                    margin-left: 50px;
+                    margin-top: -20px;
                 }
-                .img1{
-                    position: relative;
-                    left: 150px;
-                    top: 80px;
+            }
+        }
+        .table_door{
+            table{
+                font-family: 'Philosopher', sans-serif;
+                font-weight: bold;
+                font-size: 16px;
+                width: 100%;
+                margin-bottom: 80px;
+                td{
+                    padding-top: 20px;
                 }
-                .img2{
-                    position: relative;
-                    left: 120px;
-                    top: 10px;
-                }
-                .img3{
-                    position: relative;
-                    left: 40px;
-                    top: 50px
-                }
-                .safe1{
-                    width: 180px;
-                    left: 100px;
-                    top: 100px;
-                }
-                .safe2{
-                    width: 300px;
-                    height: 350px;
-                    left: 140px;
-                    top: -300px;
-                }
-                .safe3{
-                    left: -20px;
-                    top: -300px;
-                }
-                .med1{
-                    width: 60%;
-                    left: 40px;
-                    top: 80px;
-                }
-                .med2{
-                    width: 200px;
-                    left: 180px;
-                    top: -240px;
-                }
-                .med3{
-                    left: 80px;
-                    top: -170px;
-                }
-                .prof1{
-                    width: 245px;
-                    left: 30px;
-                    top: 100px;
-                }
-                .prof2{
-                    left: 0px;
-                    top: 0px;
-                }
-                .prof3{
-                    left: -120px;
-                    top: 50px;
-                }
-                .st1{
-                    width: 150px;
-                    left: 100px;
-                    top: 130px;
-                }
-                .st2{
-                    width: 175px;
-                    left: 80px;
-                    top: 20px;
-                }
-                .st3{
-                    left: -50px;
-                    top: 60px
-                }
-                .meb1{
-                    left: 50px;
-                    height: 250px;
-                }
-                .meb2{
-                    width: 185px;
-                    left: -50px;
-                    top: -50px;
-                }
-                .meb3{
-                    top: 10px;
-                    left: 280px;
-                }
-                &:hover{
-                    p{
-                        color: #10cabf;
-                    }
-                    .img3{
-                        color: #10cabf;
-                    }
+            }
+            .go_back{
+                display: inline-flex;
+                font-family: 'Philosopher', sans-serif;
+                font-weight: bold;
+                font-size: 24px;
+                p{
+                    margin-top: 5px;
+                    margin-left: 20px;
                 }
             }
         }
