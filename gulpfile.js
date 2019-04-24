@@ -16,6 +16,9 @@ const cssFiles = [
     './src/css/econom.less',
     './src/css/door.less',
     './src/css/safe.less',
+    './src/css/shelving.less',
+    './src/css/medicina.less',
+    './src/css/metall.less',
     './src/css/media.less'
 ]
 //Массив файлов скриптов

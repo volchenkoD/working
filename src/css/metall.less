@@ -1,0 +1,109 @@
+.main_metall{
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        margin-bottom: 50px;
+        /*первая - четвертая линия*/
+        .first_line, .second_line, .third_line, .fourth_line{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-items: center;
+            align-items: flex-end;
+            .first, .second, .third{
+                &:hover{
+                    img{
+                        height: 250px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+            a{
+                img{
+                    margin: 50px 50px 20px 50px;
+                    height: 200px;
+                    width: auto;
+                    transition: all 0.5s ease-out;
+                }
+                p{
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+        }
+        /*пятая линия*/
+        .five_line{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            justify-items: center;
+            align-items: flex-end;
+            .first, .second, .third{
+                &:hover{
+                    img{
+                        width: 250px;
+                        height: auto;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+            a{
+                img{
+                    margin: 50px 50px 20px 50px;
+                    height: auto;
+                    width: 200px;
+                    transition: all 0.5s ease-out;
+                }
+                p{
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+        }
+        /*отдельные элементы*/
+        .first_line{
+            .second{
+                img{
+                    margin-left: 60px;
+                }
+            }
+        }
+        .third_line{
+            img{
+                height: 100px;
+                width: auto;
+            }
+            .second{
+                img{
+                    width: 150px;
+                    height: auto;
+                }
+            }
+        }
+        .second_line{
+            .third{
+                p{
+                    margin-left: 0px;
+                }
+            }
+        }
+        .fourth_line{
+            display: grid;
+            grid-template-columns: repeat(3, 330px);
+            .second{
+                width: 250px;
+                img{
+                    margin-left: 35px;
+                   height: 150px;
+                   width: auto;
+                }
+                &:hover{
+                    img{
+                        height: 200px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+}
