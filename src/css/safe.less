@@ -1,0 +1,216 @@
+.about_safe{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    font-family: 'Roboto', sans-serif;
+    color: #602750;
+    a{
+        text-decoration: none;
+        color: #602750;
+    }
+    /*секция шапки*/
+    .header_background_color{
+        background: rgba(202, 194, 178, .6);
+        position: relative;
+        height: 140px;
+            /*блок header*/
+            .catalog_header{
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto;
+                justify-items: center;
+                align-items: center;
+                margin-top: 10px;
+                padding-bottom: 10px;
+                /*логотип и навигация*/
+                /*логотип*/
+                .logo{
+                    width: 50%;
+                    color: #5a1a4a;
+                    margin-top: 14px;
+                }
+                /*навигация*/
+                nav{
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-content: center;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding: 10px;
+                    a{
+                        margin-right: 50px;
+                        margin-top: 20px;
+                        line-height: 24px;
+                        &:hover{
+                            color: #10cabf;
+                            border-bottom: 1px #10cabf solid;
+                            }
+                    }
+                }
+            }
+    }
+    /*секция с ссылками на предыдущие страницы*/
+    .food_pieces{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        a{
+            margin: 10px;
+            padding: 10px;
+            &:hover{
+                color: #10cabf;
+            }
+        }
+    }
+    /*каталог сейфов*/
+    .main_safe{
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        margin-bottom: 50px;
+        /*первая - четвертая линия*/
+        .first_line, .second_line, .third_line, .fourth_line{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-items: center;
+            align-items: flex-end;
+            .first, .second, .third{
+                &:hover{
+                    img{
+                        height: 250px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+            a{
+                img{
+                    margin: 50px 50px 20px 50px;
+                    height: 200px;
+                    width: auto;
+                    transition: all 0.5s ease-out;
+                }
+                p{
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+        }
+        /*пятая линия*/
+        .five_line{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            justify-items: center;
+            align-items: flex-end;
+            .first, .second, .third{
+                &:hover{
+                    img{
+                        height: 250px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+            a{
+                img{
+                    margin: 50px 50px 20px 50px;
+                    height: 200px;
+                    width: auto;
+                    transition: all 0.5s ease-out;
+                }
+                p{
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+        }
+        /*отдельные элементы*/
+        .first_line{
+            .second{
+                img{
+                    margin-left: 60px;
+                }
+            }
+        }
+        .fourth_line{
+            display: grid;
+            grid-template-columns: repeat(3, 330px);
+            .second{
+                width: 250px;
+                img{
+                    margin-left: 35px;
+                   height: 150px;
+                   width: auto;
+                }
+                &:hover{
+                    img{
+                        height: 200px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    /*подвал*/
+    footer{
+        background: url(/img/bg/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
+        color: #10cabf;
+        .footer{
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-top: 50px;
+            nav{
+                display: inline-flex;
+                justify-content: space-between;
+                align-content: center;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-left: -25px;
+                margin-top: 7px;
+                a{
+                    color: #10cabf;
+                    padding-right: 20px;
+                    padding-bottom: 10px;
+                    &:not(:first-child){
+                        display: none;
+                    }
+                }
+                ul{
+                    padding-top: 10px;
+                }
+                li{
+                    padding-bottom: 10px;
+                    font-size: 14px;
+                    font-weight: normal;
+                    text-transform: none;
+                }
+                #sochial{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                    display: flex;
+                    a{
+                    height: 40px;
+                    display: inline-block;
+                    padding-left: 20px;
+                    padding-top: 20px;
+                    position: relative;
+                    top: 100px;
+                    left: 580px;
+                        :first-child{
+                             left: 560px;
+                        }
+                    }
+                }
+            }
+            .footer_cont{
+                font-family: 'Philosopher', sans-serif;
+                font-size: 16px;
+                line-height: 24px;
+                padding-bottom: 10px;
+                text-align: right;
+            }
+        }
+    }
+}
