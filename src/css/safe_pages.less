@@ -164,6 +164,28 @@
             }
         }
     }
+    .noEntryThird{
+        .line{
+            .first, .second, .three, .fourth{
+                h3{
+                    margin-left: 10px;
+                }
+            }
+            &:nth-child(2), &:nth-child(3){
+                .first, .second, .three, .fourth{
+                    h3{
+                        margin-left: 20px;
+                    }
+                    img{
+                        margin-left: 15px;
+                    }
+                }
+            }
+            &:nth-child(8){
+                margin-bottom: 50px;
+            }
+        }
+    }
     /*подвал*/
     footer{
         background: url(/img/bg/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
