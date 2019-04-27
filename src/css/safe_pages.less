@@ -307,6 +307,60 @@
             }
         }
     }
+    .depozite{
+        .line{
+            .first, .second, .three, .fourth{
+                h3{
+                    margin-left: 10px;
+                }
+                img{
+                    margin-left: 0px;
+                }
+            }
+            &:nth-child(3),&:nth-child(4), &:nth-child(5){
+                .first, .second, .three, .fourth{
+                    h3{
+                        margin-left: 10px;
+                    }
+                    img{
+                        margin-left: 0px;
+                    }
+                }
+            }
+            &:nth-child(8),&:nth-child(9), &:nth-child(10){
+                .first, .second, .three, .fourth{
+                    h3{
+                        margin-left: 0px;
+                    }
+                    img{
+                        margin-left: 10px;
+                    }
+                }
+            }
+            &:nth-child(8){
+                .first{
+                    h3{
+                        margin-left: 40px;
+                    }
+                }
+                .second{
+                    h3{
+                        margin-left: 25px;
+                    }
+                }
+            }
+            &:nth-child(10){
+                .second, .three, .fourth{
+                    h3{
+                        margin-left: 25px;
+                    }
+                }
+            }
+            .last{
+                margin-bottom: 50px;
+            }
+        }
+    }
     /*подвал*/
     footer{
         background: url(/img/bg/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
