@@ -375,6 +375,9 @@
                     margin-left: 20px;
                     margin-bottom: 30px;
                 }
+                img{
+                    margin-left: 20px;
+                }
                 table{
                     margin-top: 20px;
                     margin-left: -20px;
@@ -398,6 +401,57 @@
                     }
                 }
             }
+            &:nth-child(1){
+                .first, .second{
+                    h3{
+                        margin-left: 10px;
+                    }
+                }
+            }
+            &:nth-child(4){
+                .first, .second{
+                    h3{
+                        margin-left: 0;
+                    }
+                }
+            }
+            &:nth-child(8), &:nth-child(9){
+                .first, .second, .three, .fourth{
+                    img{
+                        margin-left: 0;
+                    }
+                }
+            }
+            &:nth-child(20){
+                .three, .fourth{
+                    h3{
+                        margin-left: 40px;
+                    }
+                    img{
+                        margin-left: 0;
+                    }
+                }
+            }
+            &:nth-child(21){
+                .fourth{
+                    img{
+                        width: 150px;
+                        margin-left: 20px;
+                    }
+                }
+                .first, .second, .three{
+                    h3{
+                        margin-left: 15px;
+                    }
+                    img{
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        .last{
+            margin-bottom: 50px;
+            margin-right: 200px;
         }
     }
     /*подвал*/
