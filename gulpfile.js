@@ -20,6 +20,7 @@ const cssFiles = [
     './src/css/medicina.less',
     './src/css/metall.less',
     './src/css/safe_pages.less',
+    './src/css/medicina_pages.less',
     './src/css/media.less'
 ]
 //Массив файлов скриптов
