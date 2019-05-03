@@ -1,0 +1,186 @@
+.shelving_pages{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    font-family: 'Roboto', sans-serif;
+    color: #602750;
+    a{
+        text-decoration: none;
+        color: #602750;
+    }
+    .header_background_color{
+        background: rgba(202, 194, 178, .6);
+        position: relative;
+        height: 140px;
+            /*блок header*/
+            .catalog_header{
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto;
+                justify-items: center;
+                align-items: center;
+                margin-top: 10px;
+                padding-bottom: 10px;
+                /*логотип и навигация*/
+                /*логотип*/
+                .logo{
+                    width: 50%;
+                    color: #5a1a4a;
+                    margin-top: 14px;
+                }
+                /*навигация*/
+                nav{
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-content: center;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding: 10px;
+                    a{
+                        margin-right: 50px;
+                        margin-top: 20px;
+                        line-height: 24px;
+                        &:hover{
+                            color: #10cabf;
+                            border-bottom: 1px #10cabf solid;
+                            }
+                    }
+                }
+            }
+    }
+    .food_pieces_color{
+        background-color: rgb(236, 225, 238);
+        .food_pieces{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                a{
+                    margin: 10px;
+                    padding: 10px;
+                    &:hover{
+                        font-size: 18px;
+                    }
+                }
+        }
+    }
+    .text_category{
+        margin-top: 30px;
+        padding: 20px;
+        color: black;
+        font-family: 'Philosopher', sans-serif;
+        h3{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        ul{
+            margin-bottom: 30px;
+            margin-top: 30px;
+            li{
+                list-style-type: circle;
+                margin-top: 10px;
+            }
+        }
+    }
+    .about_shelving{
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        h2{
+            margin-top: 20px;
+        }
+        h3{
+            font-size: 16px;
+            margin-top: -20px;
+        }
+        .about{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            margin-top: 20px;
+            .image{
+                .full{
+                    img{
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .text{
+                display: grid;
+                grid-template-rows: repeat(2, auto);
+                .little{
+                    display: inline-flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                .table-text{
+                    p{
+                        text-align: center;
+                        margin: 20px;
+                    }
+                    ul{
+                        margin-left: 40px;
+                        li{
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .go_back{
+            display: inline-flex;
+            font-family: 'Philosopher', sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            p{
+                margin-top: 5px;
+                margin-left: 20px;
+            }
+        }
+    }
+    footer{
+        background: url(../../img/bg/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
+        color: #10cabf;
+        .footer{
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-top: 50px;
+            nav{
+                display: inline-flex;
+                justify-content: space-between;
+                align-content: center;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-left: -25px;
+                margin-top: 7px;
+                a{
+                    color: #10cabf;
+                    padding-right: 20px;
+                    padding-bottom: 10px;
+                }
+                ul{
+                    padding-top: 10px;
+                }
+                li{
+                    padding-bottom: 10px;
+                    font-size: 14px;
+                    font-weight: normal;
+                    text-transform: none;
+                }
+                .sochial{
+                    display: flex;
+                    width: 50px;
+                    height: 50px;
+                    position: relative;
+                    top: 70px;
+                    left: -300px;
+                }
+            }
+            .footer_cont{
+                font-family: 'Philosopher', sans-serif;
+                font-size: 16px;
+                line-height: 24px;
+                padding-bottom: 10px;
+                text-align: right;
+            }
+        }
+    }
+}
