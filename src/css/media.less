@@ -4,8 +4,8 @@
         box-sizing: border-box;
     }
     .container{
-        max-width: 724px;
-        width: 100%;
+        max-width: 100%;
+        width: 720px;
         margin: 0 auto;
     }
     h2{
@@ -386,10 +386,10 @@
         }
     }
 }
-@media (max-width: 480px){
+@media (max-width : 480px){
     .container{
-        max-width: 440px;
-        width: 100%;
+        max-width: 100%;
+        width: 450px;
         margin: 0 auto;
     }
     h2{
@@ -651,11 +651,14 @@
                     display: grid;
                     grid-template-columns: repeat(2, auto);
                     position: relative;
-                    margin-left: 25px;
+                    margin-left: 0;
                     margin-top: 5px;
                     color: white;
                     font-family: 'Philosopher', sans-serif;
-                    table{
+                    .table{
+                        .adress{
+                            padding-right: 20px;
+                        }
                         p{
                             text-align-last: left;
                             font-size: 16px;
@@ -675,7 +678,7 @@
                 grid-template-columns: auto auto;
                 margin-top: 50px;
                 nav{
-                    margin-left: 25px;
+                    margin-left: 0px;
                     margin-top: 7px;
                     a:not(:first-child){
                         display: none;
