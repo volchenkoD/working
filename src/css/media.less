@@ -400,7 +400,7 @@
         //max-width: 100%;
         width: 90%;
         margin: 0 auto;
-        overflow: hidden;
+        
     }
     h2{
         font-size: 18px;
@@ -733,6 +733,360 @@
                     line-height: 24px;
                     //padding-bottom: 10px;
                     text-align: right;
+                }
+            }
+        }
+    }
+}
+@media (max-width : 360px){
+    .container{
+        //max-width: 100%;
+        width: 320px;
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 16px;
+        font-family: 'Philosopher', sans-serif;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .main-page{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto  auto auto auto auto;
+        .first-page{
+            background: url(../../img/bg/480.png) no-repeat center center;
+            background-size: cover;
+            height: auto;
+            .header_background_color{
+                height: 70px;
+                .header{
+                    display: grid;
+                    grid-template-columns: none;
+                    grid-template-rows: auto;
+                    justify-items: baseline;
+                    align-items: flex-start;
+                    .logo{
+                        margin-top: 0px;
+                        margin-left: 0px;
+                        img{
+                            width: 54px;
+                        }
+                    }
+                    nav{
+                        display: none;
+                    }
+                }
+            }
+            .page_title{
+                margin-top: 50px;
+                h1{
+                    font-size: 18px;
+                    margin-left: -40px;
+                }
+                p{
+                    font-size: 14px;
+                    margin-left: -40px;
+                }
+                /*блок с картинками*/
+            }
+            .first-page_img{
+                margin-top: 60px;
+                /*картинки*/
+                .img_first{
+                    border: 1px solid #10cabf;
+                    position: relative;
+                    width: 70px;
+                    height: 70px;
+                    left: 80px;
+                }
+                .img_second{
+                    border: 1px solid #10cabf;
+                    position: relative;
+                    width: 70px;
+                    height: 70px;
+                    left: 40px;
+                }
+                span{
+                    text-align: center;
+
+                }
+                .first_span{
+                    position: absolute;
+                    left: 60px;
+                    top: 86px;
+                }
+                .second_span{
+                    position: absolute;
+                    left: 200px;
+                    top: 86px;
+                }
+            }
+            /*блок с кнопокой*/
+            .header_button{
+                margin-top: 100px;
+                padding-bottom: 20px;
+                margin-left: 10px;
+            }
+        }
+        .sale_bacground{
+            background-color: #e4dddb;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            /*начало блока*/
+            .sale_block{
+                /*карточка*/
+                .card{
+                    border: 1px solid #4f095c;
+                    border-radius: 10px;
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    grid-template-rows: auto;
+                    padding:  0;
+                    img{
+                        width: 150px;
+                        height: 200px;
+                        margin-left: 0px;
+                        margin-top: 20px;
+                    }
+                    /*блок с описанием*/
+                    .card_title{
+                        position: relative;
+                        margin-left: -15px;
+                        h3{
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 18px;
+                            padding-bottom: 15px;
+                            font-weight: bold;
+                            margin-top: 20px;
+                        }
+                        li{
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-weight: normal;
+                            &:nth-child(10), &:nth-child(11), &:nth-child(12) {
+                                display: none;
+                            }
+                        }
+                        .price{
+                            margin-top: 40px;
+                            margin-left: -100px;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        .btn{
+                            position: relative;
+                            //padding: 15px 40px;
+                            font-size: 12px;
+                            margin-bottom: -20px;
+                            top: -75px;
+                            left: -10px;
+                        }
+                    }
+                }
+                /*Нижний скрол*/
+                .scroll{
+                    display: inline-flex;
+                    justify-content: center;
+                    align-content: space-between;
+                    .circle_scroll{
+                        width: 14px;
+                        height: 14px;
+                        background-color: #4f095c;
+                        border-radius: 100%;
+                        margin: 20px;
+                        margin-left: -10px;
+                        &:hover{
+                            background-color: #10cabf;
+                        }
+                    }
+                }
+            }
+        }
+        /*Каталог*/
+        .catalog_background{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, auto);
+            background: url(../../img/bg/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
+            color: white;
+            .catalog{
+                /*иконки товаров*/
+                .about_goods{
+                    display: grid;
+                    grid-template-columns: auto;
+                    grid-template-rows: repeat(6, auto);
+                    font-size: 16px;
+                    font-family: 'Philosopher', sans-serif;
+                    padding-left: 40px;
+                    margin-top: 50px;
+                }
+            }
+            /*кнопка перехода в каталог*/
+            .btn{
+            //padding: 15px 50px;
+            font-size: 14px;
+            margin-bottom: 50px;
+            position: relative;
+            left: -170px;
+            }
+        }
+        .about_company{
+            .company{
+                .company_images{
+                    display: none;
+                }
+                .company_text{
+                    .btn{
+                        display: block;
+                        font-size: 14px;
+                        margin-top: 30px;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+        .hit_sale{
+            //padding-left: 10px;
+            .about_hits{
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+                font-family: 'Philosopher', sans-serif;
+                margin-bottom: 50px;
+                .hit_goods:not(:first-child){
+                   display: none;
+                }
+                .hit_goods{
+                    .btn{
+                        //padding: 15px;
+                        background-color: #10cabf;
+                        border-radius: 10px;
+                        border: none;
+                        color: white;
+                        font-family: 'Philosopher', sans-serif;
+                        font-size: 14px;
+                        position: relative;
+                        left: 70px;
+                        top: -130px;
+                    }
+                }
+            }
+        }
+        .advantage{
+            .advantage_img{
+                h2{
+                    color: #10cabf;
+                }
+                /*карточки*/
+                .adv{
+                    display: grid;
+                    grid-template-rows: repeat(4, auto);
+                    grid-template-columns: none;
+                    padding: 0px 60px 60px 60px;
+                    /*стили для карточек*/
+                    .advanta{
+                        margin: 0px;
+                        margin-top: 30px;
+                        margin-left: -10px;
+                    }
+                }
+                /*кнопка секции*/
+                .btn{
+                    margin-top: 0px;
+                    font-size: 16px;
+                    margin-bottom: 70px;
+                    margin-left: 30px;
+                }
+            }
+        }
+        .contacts{
+            /*сетка для контактов*/
+            .contacts_maps{
+                display: grid;
+                grid-template-rows: auto auto;
+                grid-template-columns: none;
+                /*стили для карты*/
+                .maps{
+                    img{
+                    border: #4f095c 2px solid;
+                    width: 100%;
+                    height: 300px;
+                    margin: 70px 0 30px 0;
+                    }
+                }
+                /*стили для контактов*/
+                .contacts_all{
+                    display: grid;
+                    grid-template-columns: repeat(2, auto);
+                    position: relative;
+                    margin-left: 15px;
+                    margin-top: 5px;
+                    color: white;
+                    font-family: 'Philosopher', sans-serif;
+                    table{
+                        p{
+                            text-align-last: left;
+                            font-size: 16px;
+                            line-height: 24px;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+                .btn{
+                    display: none;
+                }
+            }
+        }
+        footer{
+            .footer{
+                display: grid;
+                grid-template-columns: auto auto;
+                margin-top: 50px;
+                nav{
+                    margin-left: 0px;
+                    margin-top: 7px;
+                    a:not(:first-child){
+                        display: none;
+                    }
+                    ul{
+                        padding-top: 10px;
+                    }
+                    li{
+                        //padding-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        text-transform: none;
+                    }
+                    #sochial{
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            color: #4f095c;
+                        }
+                        display: block;
+                        a{
+                        display: block;
+                        //padding-bottom: 20px;
+                        position: relative;
+                        top: -290px;
+                        left: 460px;
+                            :first-child{
+                                 left: 560px;
+                            }
+                        }
+                    }
+                }
+                .footer_cont{
+                    font-family: 'Philosopher', sans-serif;
+                    font-size: 14px;
+                    line-height: 20px;
+                    //padding-bottom: 10px;
+                    text-align: right;
+                    margin-left: -20px;
                 }
             }
         }
