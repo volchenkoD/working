@@ -1,0 +1,465 @@
+/*для небольших мониторов*/
+@media (min-width: 769px) and (max-width: 1024px){
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 24px;
+        font-family: 'Philosopher', sans-serif;
+        margin-top: 50px;
+    }
+    .catalog_pages{
+        .header_background_color{
+            height: 90px;
+            .catalog_header{
+
+                .logo{
+                    margin-top: 5px;
+                    margin-left: -30px;
+                    img{
+                        width: 60px;
+                    }
+                }
+                nav{
+                    a{
+                        margin-right: 20px;
+                        &:nth-child(1){
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .catalog_background{
+            .catalog_about{
+                .right{
+                    left: 0px;
+                }
+                .catalog_goods{
+                    &:nth-child(5){
+                        position: relative;
+                        left: 0px;
+                    }
+                }
+            }
+        }
+        footer{
+            background: url(../../img/bg/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
+            color: #10cabf;
+            .footer{
+                nav{
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    a{
+                        font-size: 12px;
+                        margin-right: 10px;
+                        &:nth-child(2){
+                            margin-left: -10px;
+                        }
+                    }
+                    ul{
+                        padding-top: 10px;
+                    }
+                    li{
+                        padding-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        text-transform: none;
+                    }
+                    #sochial{
+                        a{
+                        height: 40px;
+                        display: inline-block;
+                        padding-left: 20px;
+                        padding-top: 20px;
+                        position: relative;
+                        top: 100px;
+                        left: 480px;
+                            &:first-child{
+                                 left: 460px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*для планшетов*/
+@media (min-width: 481px) and (max-width: 768px){
+    .container{
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .catalog_pages{
+        .header_background_color{
+            height: 90px;
+            .catalog_header{
+
+                .logo{
+                    margin-top: 5px;
+                    margin-left: -150px;
+                    img{
+                        width: 60px;
+                    }
+                }
+                nav{
+                    display: none;
+                }
+            }
+        }
+        .food_pieces_color{
+            background-color: rgb(236, 225, 238);
+            .food_pieces{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    a{
+                        font-size: 16px;
+                        padding: 0px;
+                        &:hover{
+                            font-size: 16px;
+                            color: #10cabf;
+                        }
+                    }
+            }
+        }
+        .catalog_background{
+            background-color: rgba(202, 194, 178, 1);
+            .catalog_about{
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(3, 350px);
+                padding-bottom: 20px;
+                .left, .right{
+                    margin-top: 20px;
+                    background: url(../../img/bg/fortable.png) no-repeat;
+                    width: 450px;
+                    &:hover{
+                        background: url(../../img/bg/forTable2.png) no-repeat;
+                    }
+                }
+                .right{
+                    position: relative;
+                    left: -70px;
+                }
+                .catalog_goods{
+                    &:nth-child(5){
+                        position: relative;
+                        left: 20px;
+                    }
+                    p{
+                        position: relative;
+                        top: 55px;
+                        left: 50px;
+                        font-weight: bold;
+                    }
+                    .img1{
+                        position: relative;
+                        left: 120px;
+                        top: 50px;
+                        width: 100px;
+                    }
+                    .img2{
+                        position: relative;
+                        left: 70px;
+                        top: -20px;
+                        width: 150px;
+                        height: auto;
+                    }
+                    .img3{
+                        display: none;
+                    }
+                    .safe1{
+                        width: 150px;
+                        left: 100px;
+                        top: 50px;
+                    }
+                    .safe2{
+                        width: 300px;
+                        height: 300px;
+                        left: 110px;
+                        top: -250px;
+                    }
+                    .med1{
+                        width: 40%;
+                        left:70px;
+                        top: 60px;
+                    }
+                    .med2{
+                        width: 150px;
+                        left: -30px;
+                        top: -30px;
+                    }
+                    .prof1{
+                        width: 175px;
+                        left: 30px;
+                        top: 70px;
+                    }
+                    .prof2{
+                        left: 0px;
+                        top: 0px;
+                    }
+                    .st1{
+                        width: 100px;
+                        left: 80px;
+                        top: 80px;
+                    }
+                    .st2{
+                        width: 100px;
+                        left: 80px;
+                        top: 20px;
+                    }
+                    .meb1{
+                        width: 200px;
+                        left: 80px;
+                        height: auto;
+                    }
+                    .meb2{
+                        width: 105px;
+                        left: 0px;
+                        top: -80px;
+                    }
+                    .meb3{
+                        top: 10px;
+                        left: 280px;
+                    }
+                    &:hover{
+                        p{
+                            color: #10cabf;
+                        }
+                        .img3{
+                            color: #10cabf;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            .footer{
+                display: grid;
+                grid-template-columns: auto auto;
+                margin-top: 50px;
+                nav{
+                    margin-left: 0px;
+                    margin-top: 7px;
+                    a:not(:first-child){
+                        display: none;
+                    }
+                    ul{
+                        padding-top: 10px;
+                    }
+                    li{
+                        padding-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        text-transform: none;
+                    }
+                    #sochial{
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            margin-left: -10px;
+                        }
+                        display: flex;
+                        a{
+                        display: inline-block;
+                        padding-left: 20px;
+                        position: relative;
+                        top: 90px;
+                        left:310px;
+                            :first-child{
+                                 left: 260px;
+                            }
+                        }
+                    }
+                }
+                .footer_cont{
+                    font-family: 'Philosopher', sans-serif;
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-bottom: 10px;
+                    text-align: right;
+                    margin-right: 100px;
+                }
+            }
+        }
+    }
+}
+/*для телефонов*/
+@media (min-width: 360px) and (max-width : 480px){
+    .container{
+        width: 320px;
+        margin: 0 auto;
+    }
+    .catalog_pages{
+        .header_background_color{
+            height: 70px;
+            .catalog_header{
+                display: grid;
+                grid-template-columns: none;
+                grid-template-rows: auto;
+                justify-items: baseline;
+                align-items: flex-start;
+                .logo{
+                    margin-top: 0px;
+                    margin-left: 0px;
+                    img{
+                        width: 54px;
+                    }
+                }
+                nav{
+                    display: none;
+                }
+            }
+        }
+        .food_pieces_color{
+            background-color: rgb(236, 225, 238);
+            .food_pieces{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    a{
+                        font-size: 14px;
+                        padding: 0px;
+                        &:hover{
+                            font-size: 14px;
+                            color: #10cabf;
+                        }
+                    }
+            }
+        }
+        .catalog_background{
+            background-color: rgba(202, 194, 178, 1);
+            .catalog_about{
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: repeat(6, 260px);
+                .left, .right{
+                    margin-left: 10%;
+                    margin-bottom: 30px;
+                    background: url(../../img/bg/catalog_forMobil.png) no-repeat;
+                    &:hover{
+                        background: url(../../img/bg/catalog_forMobile2.png) no-repeat;
+                    }
+                }
+                .right{
+                    position: relative;
+                    left: 0px;
+                    top: 0px;
+                }
+                .catalog_goods{
+                    p{
+                        position: relative;
+                        top: 70px;
+                        left: 20px;
+                        font-weight: bold;
+                    }
+                    .img1{
+                        position: relative;
+                        width: 70px;
+                        height: auto;
+                        left: 120px;
+                        top: 0px;
+                    }
+                    .img2{
+                        display: none;
+                    }
+                    .img3{
+                        display: none;
+                    }
+                    .safe1{
+                        width: 100px;
+                        height: auto;
+                        left: 100px;
+                        top: -20px;
+                    }
+                    .med1{
+                        width: 150px;
+                        height: auto;
+                        left: 100px;
+                        top: -20px;
+                    }
+                    .prof1{
+                        width: 150px;
+                        left: 60px;
+                        top: 50px;
+                    }
+                    .st1{
+                        width: 100px;
+                        height: auto;
+                        left: 100px;
+                        top: 0px;
+                    }
+                    .meb1{
+                        width: 150px;
+                        height: auto;
+                        left: 100px;
+                        top: -10px;
+                    }
+                    &:hover{
+                        p{
+                            color: #10cabf;
+                        }
+                        .img3{
+                            color: #10cabf;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            .footer{
+                display: grid;
+                grid-template-columns: auto auto;
+                margin-top: 50px;
+                nav{
+                    margin-left: 0px;
+                    margin-top: 7px;
+                    a:not(:first-child){
+                        display: none;
+                    }
+                    ul{
+                        padding-top: 10px;
+                    }
+                    li{
+                        //padding-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        text-transform: none;
+                    }
+                    #sochial{
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            color: #4f095c;
+                        }
+                        display: block;
+                        a{
+                        display: block;
+                        //padding-bottom: 20px;
+                        position: relative;
+                        top: -290px;
+                        left: 430px;
+                            :first-child{
+                                 left: 560px;
+                            }
+                        }
+                    }
+                }
+                .footer_cont{
+                    font-family: 'Philosopher', sans-serif;
+                    font-size: 14px;
+                    line-height: 20px;
+                    //padding-bottom: 10px;
+                    text-align: right;
+                    margin-left: -20px;
+                }
+            }
+        }
+    }
+}
