@@ -24,7 +24,8 @@ const cssFiles = [
     './src/css/shelving_pages.less',
     './src/css/media.less',
     './src/css/media_catalog.less',
-    './src/css/media_safe.less'
+    './src/css/media_safe.less',
+    './src/css/media_safePages.less'
 ]
 //Массив файлов скриптов
 const jsFiles = [

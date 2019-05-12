@@ -12,7 +12,7 @@
         font-family: 'Philosopher', sans-serif;
         margin-top: 50px;
     }
-    .about_safe{
+    .safe_pages{
         .header_background_color{
             height: 90px;
             .catalog_header{
@@ -34,15 +34,31 @@
                 }
             }
         }
-        .main_safe{
-            /*первая - четвертая линия*/
-            .first_line, .second_line, .third_line, .fourth_line{
-                grid-template-columns: repeat(3, auto);
+        .category{
+            .line{
+                .first, .second, .three, .fourth{
+                    h3{
+                        font-size: 14px;
+                    }
+                }
             }
-            .fourth_line{
-                margin-left: 40px;
-                .second{
-                    margin-left: 40px;
+        }
+        .guns{
+            .line{
+                .first, .second, .three, .fourth{
+                    h3{
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .seriaGar, .seriaW, .seriaEx, .akss, .seriaMas, .telega, .shkaf, .shkafTerm{
+            .line{
+                .first, .second, .three, .fourth{
+                    table{
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -95,7 +111,7 @@
         width: 90%;
         margin: 0 auto;
     }
-    .about_safe{
+    .safe_pages{
         .header_background_color{
             height: 90px;
             .catalog_header{
@@ -127,87 +143,48 @@
                     }
             }
         }
-        .main_safe{
-            margin-bottom: 30px;
-            /*первая - четвертая линия*/
-            .first_line, .second_line, .third_line, .fourth_line{
-                grid-template-columns: repeat(3, max-content);
-                .first, .second, .third{
-                    width: 230px;
-                    &:hover{
-                        img{
-                            height: 150px;
-                        }
-                        p{
-                            font-size: 16px;
-                        }
-                    }
-                }
-                a{
-                    img{
-                        height: 150px;
-                    }
-                }
-            }
-            .third_line{
-                .third{
-                    img{
-                        margin-left: 60px;
-                    }
-                }
-            }
-            .fourth_line{
-                .first{
-                    img{
-                        margin-left: 90px;
-                    }
-                }
-            }
-            /*пятая линия*/
-            .five_line{
+        .category, .guns, .mebel, .depoziteSafe, .hotel, .received, .main_safe{
+            .line{
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(2, auto);
+                margin-top: 30px;
                 .first, .second{
-                    &:hover{
-                        img{
-                            height: 150px;
+                    margin-bottom: 20px;
+                }
+                &:nth-child(11){
+                    margin-bottom: 30px;
+                    margin-right: 0px;
+                }
+            }
+            .last{
+                margin-right: 0px;
+            }
+        }
+        .noEntryThird{
+            .line{
+                align-content: center;
+                align-items: center;
+                &:nth-child(8){
+                    margin-right: 0px;
+                }
+            }
+        }
+        .NoFireCart{
+            .line{
+                margin-right: 0px;
+            }
+        }
+        .main_safe{
+            .first_line, .second_line, .third_line, .fourth_line{
+            }
+            .first_line{
+                .third{
+                    a{
+                        #akses{
+                            margin-left: 20px;
                         }
                         p{
-                            font-size: 16px;
-                        }
-                    }
-                }
-                a{
-                    img{
-                        height: 150px;
-                    }
-                }
-            }
-            /*отдельные элементы*/
-            .first_line{
-                .second{
-                    img{
-                        margin-left: 60px;
-                    }
-                }
-            }
-            .third_line{
-                .second{
-                    img{
-                        margin-left: 70px;
-                    }
-                }
-            }
-            .fourth_line{
-                .second{
-                    width: 230px;
-                    img{
-                        margin-left: 15px;
-                        height: 150px;
-                        width: auto;
-                    }
-                    &:hover{
-                        img{
-                            height: 150px;
-                            margin-left: 15px;
+                            margin-left: 20px;
                         }
                     }
                 }
@@ -248,7 +225,7 @@
         width: 320px;
         margin: 0 auto;
     }
-    .about_safe{
+    .safe_pages{
         .header_background_color{
             height: 70px;
             .catalog_header{
@@ -284,64 +261,40 @@
                     }
             }
         }
-        .main_safe{
-            .first_line, .second_line, .third_line, .fourth_line, .five_line{
-                grid-template-columns: min-content;
-                justify-content: center;
-                .first, .second, .third{
-                    &:hover{
-                        img{
-                            height: 150px;
-                        }
-                        p{
-                            font-size: 16px;
-                        }
-                    }
+        .category, .mebel, .depoziteSafe, .hotel,.received{
+            .line{
+                grid-template-columns: auto;
+                grid-template-rows: repeat(4, auto);
+                margin-top: 30px;
+                width: 320px;
+                .first, .second, .three, .fourth{
+                    margin-bottom: 20px;
                 }
-                a{
-                    img{
-                        margin: 50px 50px 20px 50px;
-                        height: 150px;
-                        width: auto;
-                        transition: none;
-                    }
-                    p{
-                        text-align: center;
-                        font-size: 16px;
-                    }
+                &:nth-child(11){
+                    margin-bottom: 30px;
+                    margin-right: 0px;
                 }
             }
-            .first_line{
-                .first{
-                    img{
-                        margin-left: 60px;
-                    }
-                }
-                .second{
-                    img{
-                        margin-left: 70px;
-                    }
-                }
-            }
-            .third_line{
-                .second{
-                    img{
-                        margin-left: 80px;
-                    }
+        }
+        .guns{
+            .line{
+                grid-template-columns: auto;
+                grid-template-rows: repeat(4, auto);
+                margin-top: 30px;
+                width: 320px;
+                .first, .second, .three, .fourth{
+                    margin-bottom: 20px;
                 }
             }
-            .fourth_line{
-                .first{
+        }
+        .NoFireCart{
+            .line{
+                .first, .second{
                     img{
-                        margin-left: 60px;
+                        margin-left: 20px;
                     }
-                }
-                .second{
-                    &:hover{
-                        img{
-                            height: 150px;
-                            margin-left: 35px;
-                        }
+                    h3{
+                        margin-left: 10px;
                     }
                 }
             }
