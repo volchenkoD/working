@@ -1,0 +1,385 @@
+@media (min-width: 769px) and (max-width: 1024px){
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 24px;
+        font-family: 'Philosopher', sans-serif;
+        margin-top: 50px;
+    }
+    .about_safe{
+        .header_background_color{
+            height: 90px;
+            .catalog_header{
+
+                .logo{
+                    margin-top: 5px;
+                    margin-left: -30px;
+                    img{
+                        width: 60px;
+                    }
+                }
+                nav{
+                    a{
+                        margin-right: 20px;
+                        &:nth-child(1){
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .main_safe{
+            /*первая - четвертая линия*/
+            .first_line, .second_line, .third_line, .fourth_line{
+                grid-template-columns: repeat(3, auto);
+            }
+            .fourth_line{
+                margin-left: 40px;
+                .second{
+                    margin-left: 40px;
+                }
+            }
+        }
+        footer{
+            background: url(../../img/bg/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
+            color: #10cabf;
+            .footer{
+                nav{
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    a{
+                        font-size: 12px;
+                        margin-right: 10px;
+                        &:nth-child(2){
+                            margin-left: -10px;
+                        }
+                    }
+                    ul{
+                        padding-top: 10px;
+                    }
+                    li{
+                        padding-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        text-transform: none;
+                    }
+                    #sochial{
+                        a{
+                        height: 40px;
+                        display: inline-block;
+                        padding-left: 20px;
+                        padding-top: 20px;
+                        position: relative;
+                        top: 100px;
+                        left: 430px;
+                            &:first-child{
+                                 left: 410px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*для планшетов*/
+@media (min-width: 481px) and (max-width: 768px){
+    .container{
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about_safe{
+        .header_background_color{
+            height: 90px;
+            .catalog_header{
+
+                .logo{
+                    margin-top: 5px;
+                    margin-left: -150px;
+                    img{
+                        width: 60px;
+                    }
+                }
+                nav{
+                    display: none;
+                }
+            }
+        }
+        .food_pieces_color{
+            background-color: rgb(236, 225, 238);
+            .food_pieces{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    a{
+                        font-size: 16px;
+                        padding: 0px;
+                        &:hover{
+                            font-size: 16px;
+                            color: #10cabf;
+                        }
+                    }
+            }
+        }
+        .main_safe{
+            margin-bottom: 30px;
+            /*первая - четвертая линия*/
+            .first_line, .second_line, .third_line, .fourth_line{
+                grid-template-columns: repeat(3, max-content);
+                .first, .second, .third{
+                    width: 230px;
+                    &:hover{
+                        img{
+                            height: 150px;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                a{
+                    img{
+                        height: 150px;
+                    }
+                }
+            }
+            /*пятая линия*/
+            .five_line{
+                .first, .second{
+                    &:hover{
+                        img{
+                            height: 150px;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                a{
+                    img{
+                        height: 150px;
+                    }
+                }
+            }
+            /*отдельные элементы*/
+            .first_line{
+                .second{
+                    img{
+                        margin-left: 60px;
+                    }
+                }
+            }
+            .third_line{
+                .second{
+                    img{
+                        margin-left: 70px;
+                    }
+                }
+            }
+            .fourth_line{
+                .second{
+                    width: 230px;
+                    img{
+                        margin-left: 15px;
+                        height: 150px;
+                        width: auto;
+                    }
+                    &:hover{
+                        img{
+                            height: 150px;
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            .footer{
+                display: grid;
+                grid-template-columns: auto auto;
+                margin-top: 50px;
+                nav{
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    a{
+                        font-size: 12px;
+                        margin-right: 10px;
+                        &:nth-child(2){
+                            margin-left: -10px;
+                        }
+                    }
+                    ul{
+                        padding-top: 10px;
+                    }
+                    li{
+                        padding-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+    }
+}
+/*для телефонов*/
+@media (min-width: 360px) and (max-width : 480px){
+    .container{
+        width: 320px;
+        margin: 0 auto;
+    }
+    .about_safe{
+        .header_background_color{
+            height: 70px;
+            .catalog_header{
+                display: grid;
+                grid-template-columns: none;
+                grid-template-rows: auto;
+                justify-items: baseline;
+                align-items: flex-start;
+                .logo{
+                    margin-top: 0px;
+                    margin-left: 0px;
+                    img{
+                        width: 54px;
+                    }
+                }
+                nav{
+                    display: none;
+                }
+            }
+        }
+        .food_pieces_color{
+            background-color: rgb(236, 225, 238);
+            .food_pieces{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    a{
+                        font-size: 14px;
+                        padding: 0px;
+                        &:hover{
+                            font-size: 14px;
+                            color: #10cabf;
+                        }
+                    }
+            }
+        }
+        .main_safe{
+            .first_line, .second_line, .third_line, .fourth_line, .five_line{
+                grid-template-columns: min-content;
+                justify-content: center;
+                .first, .second, .third{
+                    &:hover{
+                        img{
+                            height: 150px;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                a{
+                    img{
+                        margin: 50px 50px 20px 50px;
+                        height: 150px;
+                        width: auto;
+                        transition: none;
+                    }
+                    p{
+                        text-align: center;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .first_line{
+                .first{
+                    img{
+                        margin-left: 60px;
+                    }
+                }
+                .second{
+                    img{
+                        margin-left: 70px;
+                    }
+                }
+            }
+            .third_line{
+                .second{
+                    img{
+                        margin-left: 80px;
+                    }
+                }
+            }
+            .fourth_line{
+                .first{
+                    img{
+                        margin-left: 60px;
+                    }
+                }
+                .second{
+                    &:hover{
+                        img{
+                            height: 150px;
+                            margin-left: 35px;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            .footer{
+                display: grid;
+                grid-template-columns: auto auto;
+                margin-top: 50px;
+                nav{
+                    margin-left: 0px;
+                    margin-top: 7px;
+                    a:not(:first-child){
+                        display: none;
+                    }
+                    ul{
+                        padding-top: 10px;
+                    }
+                    li{
+                        //padding-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        text-transform: none;
+                    }
+                    #sochial{
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            color: #4f095c;
+                        }
+                        display: block;
+                        a{
+                        display: block;
+                        //padding-bottom: 20px;
+                        position: relative;
+                        top: -290px;
+                        left: 430px;
+                            :first-child{
+                                 left: 560px;
+                            }
+                        }
+                    }
+                }
+                .footer_cont{
+                    font-family: 'Philosopher', sans-serif;
+                    font-size: 14px;
+                    line-height: 20px;
+                    //padding-bottom: 10px;
+                    text-align: right;
+                    margin-left: -20px;
+                }
+            }
+        }
+    }
+}
