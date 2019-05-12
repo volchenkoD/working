@@ -638,6 +638,34 @@
                 }
             }
         }
+        .diplomat{
+            .img_door{
+                .full_img{
+                    img{
+                        height: 300px;
+                        width: auto;
+                        &:last-child{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .noFire, .dp2, .luck, .dt1{
+            .piecesImg{
+                display: none;
+            }
+            .img_door{
+                .text_img{
+                    ul{
+                        li{
+                            padding: 10px;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
         footer{
             .footer{
                 display: grid;
@@ -1087,6 +1115,12 @@
             .img_door{
                 grid-template-columns: auto;
                 grid-template-rows: repeat(3, auto);
+                .full_img{
+                    img{
+                        height: 300px;
+                        width: auto;
+                    }
+                }
                 .pieces{
                     display: none;
                 }
@@ -1119,6 +1153,9 @@
                     img{
                         height: 300px;
                         width: auto;
+                        &:last-child{
+                            padding-left: 10px;
+                        }
                     }
                 }
             }
@@ -1134,6 +1171,92 @@
                         &:nth-child(2){
                             margin-left: -30px;
                             margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .diplomat{
+            .img_door{
+                .full_img{
+                    img{
+                        height: 300px;
+                        width: auto;
+                        &:last-child{
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .bayard{
+            .img_door{
+                .full_img{
+                    img{
+                        height: 300px;
+                        width: auto;
+                        &:last-child{
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .noFire{
+            .piecesImg{
+                display: none;
+            }
+            .img_door{
+                .text_img{
+                    grid-template-columns: auto;
+                    ul{
+                        li{
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .dt1{
+            .piecesImg{
+                display: none;
+            }
+            .img_door{
+                .text_img{
+                    grid-template-columns: auto;
+                    ul{
+                        li{
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .luck{
+            .piecesImg{
+                display: none;
+            }
+            .img_door{
+                .text_img{
+                    grid-template-columns: auto;
+                    ul{
+                        li{
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .dp2{
+            .piecesImg{
+                display: none;
+            }
+            .img_door{
+                .text_img{
+                    grid-template-columns: auto;
+                    ul{
+                        li{
+                            padding: 10px;
                         }
                     }
                 }
