@@ -443,6 +443,139 @@
                 }
             }
         }
+        .noEntryThird{
+            .line{
+                &:first-child{
+                    .three, .fourth{
+                        h3{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    .second, .fourth{
+                        h3{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                &:nth-child(4){
+                    .first, .second{
+                        h3{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+                &:nth-child(5), &:nth-child(6){
+                    .first, .second, .three, .fourth{
+                        h3{
+                            margin-left: 0px;
+                        }
+                    }
+                }
+                &:nth-child(7){
+                    .first, .three{
+                        h3{
+                            padding-left: 20px;
+                        }
+                    }
+                }
+                &:nth-child(8){
+                    .second{
+                        h3{
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .noEntryFive{
+            .line{
+                .first, .second, .three, .fourth{
+                    h3{
+                        padding-left: 10px;
+                        margin-left: 0px;
+                    }
+                    img{
+                        padding-left: 10px;
+                        margin-left: 0px;
+                    }
+                }
+                &:nth-child(4){
+                    .first, .second, .three, .fourth{
+                        h3{
+                            padding-left: -10px;
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .noEntryNoFire{
+            .line{
+                &:nth-child(2){
+                    .fourth{
+                        h3{
+                            margin-left: 0;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    .second{
+                        h3{
+                            margin-left: 0px;
+                        }
+                    }
+                }
+                &:nth-child(5){
+                    .first, .three, .fourth{
+                        h3{
+                            margin-left: -10px;
+                        }
+                        table{
+                            margin-left: 0px;
+                        }
+                        img{
+                            padding-left: 20px;
+                        }
+                    }
+                }
+                &:nth-child(6){
+                    .three{
+                        h3{
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .noFire{
+            .line{
+                &:nth-child(5), &:nth-child(6), &:nth-child(7){
+                    .first,.second, .three, .fourth{
+                        h3{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                &:nth-child(9){
+                    .three, .fourth{
+                        h3{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .depozite{
+            .line{
+                .first, .second, .three, .fourth{
+                    h3{
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
         .guns{
             .line{
                 grid-template-columns: auto;
@@ -461,7 +594,7 @@
                         margin-left: 20px;
                     }
                     h3{
-                        margin-left: 10px;
+                        margin-left: 20px;
                     }
                 }
             }
