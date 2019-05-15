@@ -649,4 +649,157 @@
             }
         }
     }
+    .about_safe{
+        .main_medicina{
+            .first_line, .second_line, .third_line, .fourth_line, .five_line{
+                grid-template-columns: min-content;
+                justify-content: center;
+                .first, .second, .third{
+                    &:hover{
+                        img{
+                            height: 150px;
+                            width: auto;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                a{
+                    img{
+                        height: 150px;
+                        width: auto;
+                        transition: none;
+                    }
+                    p{
+                        text-align: center;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .first_line{
+                .first{
+                    a{
+                      img{
+                          margin-left: 50px;
+                      }
+                      p{
+                          margin-left: 50px;
+                      }
+                    }
+                }
+            }
+            .second_line{
+                .first{
+                    a{
+                        img{
+                            margin-left: 40px;
+                        }
+                        p{
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .main_shelving{
+            .first_line, .second_line{
+                grid-template-columns: min-content;
+                justify-content: center;
+                .first, .second, .third{
+                    &:hover{
+                        img{
+                            height: 150px;
+                            width: auto;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                a{
+                    img{
+                        height: 150px;
+                        width: auto;
+                        transition: none;
+                        margin-left: 30px;
+                    }
+                    p{
+                        text-align: center;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .second_line{
+                .first, .second, .third{
+                    a{
+                        img, p{
+                            margin-left: -70px;
+                        }
+                    }
+                }
+                .second{
+                    a{
+                        img{
+                            margin-left: -60px;
+                        }
+                    }
+                }
+            }
+        }
+        .main_metall{
+            .first_line, .second_line, .third_line, .fourth_line, .five_line{
+                grid-template-columns: min-content;
+                justify-content: center;
+                .first, .second, .third{
+                    &:hover{
+                        img{
+                            height: 150px;
+                            width: auto;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                a{
+                    img{
+                        height: 150px;
+                        width: auto;
+                        transition: none;
+                        margin-left: 50px;
+                    }
+                    p{
+                        text-align: center;
+                        font-size: 16px;
+                        margin-left: -10px;
+                    }
+                }
+            }
+            .second_line{
+                .first{
+                    a{
+                        img{
+                            margin-left: 70px;
+                        }
+                    }
+                }
+            }
+            .five_line{
+                margin-bottom: 20px;
+                .first, .second{
+                    &:hover{
+                        img{
+                            height: 100px;
+                        }
+                    }
+                    a{
+                        img{
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
