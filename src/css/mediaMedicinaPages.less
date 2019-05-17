@@ -1,0 +1,388 @@
+@media (min-width: 769px) and (max-width: 1024px){
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 24px;
+        font-family: 'Philosopher', sans-serif;
+        margin-top: 50px;
+    }
+    .safe_pages{
+        .header_background_color{
+            height: 90px;
+            .catalog_header{
+
+                .logo{
+                    margin-top: 5px;
+                    margin-left: -30px;
+                    img{
+                        width: 60px;
+                    }
+                }
+                nav{
+                    a{
+                        margin-right: 20px;
+                        &:nth-child(1){
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .category{
+            .line{
+                .first, .second, .three, .fourth{
+                    h3{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .guns{
+            .line{
+                .first, .second, .three, .fourth{
+                    h3{
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .seriaGar, .seriaW, .seriaEx, .akss, .seriaMas, .telega, .shkaf, .shkafTerm{
+            .line{
+                .first, .second, .three, .fourth{
+                    table{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        footer{
+            background: url(../../img/bg/dark-oak-wood-grain-chipboard-4k-2160p-uhd-panning-footage-dark-texture-lin_ej9rjkv5l__F0000.png) no-repeat center center;
+            color: #10cabf;
+            .footer{
+                nav{
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    a{
+                        font-size: 12px;
+                        margin-right: 10px;
+                        &:nth-child(2){
+                            margin-left: -10px;
+                        }
+                    }
+                    ul{
+                        padding-top: 10px;
+                    }
+                    li{
+                        padding-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        text-transform: none;
+                    }
+                    #sochial{
+                        a{
+                        height: 40px;
+                        display: inline-block;
+                        padding-left: 20px;
+                        padding-top: 20px;
+                        position: relative;
+                        top: 100px;
+                        left: 430px;
+                            &:first-child{
+                                 left: 410px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*для планшетов*/
+@media (min-width: 481px) and (max-width: 768px){
+    .container{
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .safe_pages{
+        .header_background_color{
+            height: 90px;
+            .catalog_header{
+
+                .logo{
+                    margin-top: 5px;
+                    margin-left: -150px;
+                    img{
+                        width: 60px;
+                    }
+                }
+                nav{
+                    display: none;
+                }
+            }
+        }
+        .food_pieces_color{
+            background-color: rgb(236, 225, 238);
+            .food_pieces{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    a{
+                        font-size: 16px;
+                        padding: 0px;
+                        &:hover{
+                            font-size: 16px;
+                            color: #10cabf;
+                        }
+                    }
+            }
+        }
+        .category, .guns, .mebel, .depoziteSafe, .hotel, .received, .main_safe{
+            .line{
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(2, auto);
+                margin-top: 30px;
+                .first, .second{
+                    margin-bottom: 20px;
+                }
+                &:nth-child(11){
+                    margin-bottom: 30px;
+                    margin-right: 0px;
+                }
+            }
+            .last{
+                margin-right: 0px;
+            }
+        }
+        .noEntryThird{
+            .line{
+                align-content: center;
+                align-items: center;
+                &:nth-child(8){
+                    margin-right: 0px;
+                }
+            }
+        }
+        .NoFireCart{
+            .line{
+                margin-right: 0px;
+            }
+        }
+        .main_safe{
+            .first_line, .second_line, .third_line, .fourth_line{
+            }
+            .first_line{
+                .third{
+                    a{
+                        #akses{
+                            margin-left: 20px;
+                        }
+                        p{
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            .footer{
+                display: grid;
+                grid-template-columns: auto auto;
+                margin-top: 50px;
+                nav{
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    a{
+                        font-size: 12px;
+                        margin-right: 10px;
+                        &:nth-child(2){
+                            margin-left: -10px;
+                        }
+                    }
+                    ul{
+                        padding-top: 10px;
+                    }
+                    li{
+                        padding-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+    }
+}
+/*для телефонов*/
+@media (min-width: 360px) and (max-width : 480px){
+    .container{
+        width: 320px;
+        margin: 0 auto;
+    }
+    .medicina_pages{
+        .header_background_color{
+            height: 70px;
+            .catalog_header{
+                display: grid;
+                grid-template-columns: none;
+                grid-template-rows: auto;
+                justify-items: baseline;
+                align-items: flex-start;
+                .logo{
+                    margin-top: 0px;
+                    margin-left: 0px;
+                    img{
+                        width: 54px;
+                    }
+                }
+                nav{
+                    display: none;
+                }
+            }
+        }
+        .food_pieces_color{
+            background-color: rgb(236, 225, 238);
+            .food_pieces{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    a{
+                        font-size: 14px;
+                        padding: 0px;
+                        &:hover{
+                            font-size: 14px;
+                            color: #10cabf;
+                        }
+                    }
+            }
+        }
+        .medicinaPages{
+            .line{
+                grid-template-columns: auto;
+                grid-template-rows: repeat(4, auto);
+                margin-top: 30px;
+                width: 320px;
+                .first, .second, .three, .fourth{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .safeTermostat{
+            .line{
+                &:nth-child(1){
+                    .three, .fourth{
+                        h3{
+                            margin-left: 20px;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    .first{
+                        h3{
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .oneDoor{
+            .line{
+                .first, .second, .three, .fourth{
+                    img{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .twoDoor{
+            .line{
+                .first, .second, .three, .fourth{
+                    img{
+                        margin-left: 10px;
+                    }
+                    h3{
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+        .medTable{
+            .line{
+                .first, .second, .three, .fourth{
+                    table{
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+        .shirma{
+            .line{
+                .first{
+                    h3{
+                        margin-left: 0px;
+                    }
+                    img{
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+        footer{
+            .footer{
+                display: grid;
+                grid-template-columns: auto auto;
+                margin-top: 50px;
+                nav{
+                    margin-left: 0px;
+                    margin-top: 7px;
+                    a:not(:first-child){
+                        display: none;
+                    }
+                    ul{
+                        padding-top: 10px;
+                    }
+                    li{
+                        //padding-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        text-transform: none;
+                    }
+                    #sochial{
+                        display: grid;
+                        grid-template-columns: repeat(3, auto);
+                        grid-template-rows: auto;
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            color: #4f095c;
+                        }
+                        a{
+                        display: block;
+                        //padding-bottom: 20px;
+                        position: relative;
+                        top: 150px;
+                        left:   -10px;
+                            :first-child{
+                                 left: 560px;
+                            }
+                        }
+                    }
+                }
+                .footer_cont{
+                    font-family: 'Philosopher', sans-serif;
+                    font-size: 14px;
+                    line-height: 20px;
+                    //padding-bottom: 10px;
+                    text-align: right;
+                    margin-left: -200px;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
