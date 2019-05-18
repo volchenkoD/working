@@ -225,7 +225,7 @@
         width: 320px;
         margin: 0 auto;
     }
-    .medicina_pages{
+    .shelving_pages{
         .header_background_color{
             height: 70px;
             .catalog_header{
@@ -254,6 +254,7 @@
                     a{
                         font-size: 14px;
                         padding: 0px;
+                        padding-left: 20px;
                         &:hover{
                             font-size: 14px;
                             color: #10cabf;
@@ -261,75 +262,66 @@
                     }
             }
         }
-        .medicinaPages{
-            width: 320px;
-            .line{
+        .about_shelving{
+            .about{
+                grid-template-rows: repeat(3, auto);
                 grid-template-columns: auto;
-                grid-template-rows: repeat(4, auto);
-                margin-top: 30px;
-                width: 200px;
-                margin: 0 auto;
-                .first, .second, .three, .fourth{
-                    margin-bottom: 20px;
-                }
-            }
-        }
-        .safeTermostat{
-            .line{
-                &:nth-child(1){
-                    .three, .fourth{
-                        h3{
-                            margin-left: 20px;
+                .image{
+                    .full{
+                        margin-left: 30px;
+                        img{
+                            width: 100px;
+                            margin-top: 20px;
+                            margin-right: 20px;
                         }
                     }
                 }
-                &:nth-child(2){
-                    .first{
-                        h3{
-                            margin-left: 20px;
+                .text{
+                    .little{
+                        display: block;
+                        margin-left: 170px;
+                        img{
+                            position: relative;
+                            width: 70px;
+                            height: 70px;
+                            top: -200px;
+                        }
+                    }
+                    .table-text{
+                        margin-top: -150px;
+                        table{
+                            margin-left: 0px;
+                            td{
+                                &:first-child{
+                                }
+                            }
                         }
                     }
                 }
             }
         }
-        .oneDoor{
-            .line{
-                .first, .second, .three, .fourth{
+        .about_mobile{
+            h2{
+                margin-left: 40px;
+            }
+            .mobile{
+                grid-template-rows: repeat(2, auto);
+                grid-template-columns: auto;
+                .full_image{
                     img{
-                        margin-left: 10px;
+                        margin-left: 50px;
+                        width: 200px;
                     }
                 }
-            }
-        }
-        .twoDoor{
-            .line{
-                .first, .second, .three, .fourth{
-                    img{
-                        margin-left: 10px;
-                    }
-                    h3{
-                        margin-left: 20px;
-                    }
-                }
-            }
-        }
-        .medTable{
-            .line{
-                .first, .second, .three, .fourth{
-                    table{
-                        margin-left: 0px;
-                    }
-                }
-            }
-        }
-        .shirma{
-            .line{
-                .first{
-                    h3{
-                        margin-left: 0px;
-                    }
-                    img{
-                        margin-left: 20px;
+                .small_image{
+                    .line{
+                        img{
+                            margin-left: 20px;
+                            margin-top: 20px;
+                            margin-bottom: 30px;
+                            width: 70px;
+                            height: 70px;
+                        }
                     }
                 }
             }
@@ -364,15 +356,15 @@
                             color: #4f095c;
                         }
                         a{
-                        display: block;
-                        //padding-bottom: 20px;
-                        padding-left: 0px;
-                        position: relative;
-                        top: 150px;
-                        left:  30px;
-                            :first-child{
-                                 left: 560px;
-                            }
+                            display: block;
+                            //padding-bottom: 20px;
+                            padding-left: 0px;
+                            position: relative;
+                            top: 70px;
+                            left:  330px;
+                                :first-child{
+                                    left: 560px;
+                                }
                         }
                     }
                 }
@@ -382,9 +374,9 @@
                     line-height: 20px;
                     //padding-bottom: 10px;
                     text-align: right;
-                    margin-left: -130px;
+                    margin-left: -60px;
                     margin-bottom: 0px;
-                    width: 150px;
+                    width: 170px;
                 }
             }
         }
