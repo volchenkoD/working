@@ -64,6 +64,100 @@
                 }
             }
         }
+        .noEntryThird{
+            .line{
+                &:nth-child(3), &:nth-child(4){
+                    .three, .fourth{
+                        img{
+                            margin-left: 0px;
+                        }
+                    }
+                }
+                &:nth-child(7){
+                    .first, .second, .three, .fourth{
+                        img{
+                            margin-left: -10px;
+                        }
+                    }
+                }
+                &:nth-child(8){
+                    .first, .second{
+                        img{
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .noEntryFive, .noEntryNoFire{
+            .line{
+                &:nth-child(1), &:nth-child(2){
+                    .first, .second, .three, .fourth{
+                        h3{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                &:nth-child(6){
+                    .first, .second, .three{
+                        h3{
+                            margin-left: 0px;
+                        }
+                        img{
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .noFire{
+            .line{
+                .first, .second, .three, .fourth{
+                    h3{
+                        margin-left: 20px;
+                    }
+                }
+                &:nth-child(5){
+                    .three, .fourth{
+                        h3{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                &:nth-child(6), &:nth-child(7){
+                    .first, .second, .three, .fourth{
+                        h3{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .NoFireCart{
+            .line{
+                .first, .second{
+                    h3{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .depozite{
+            .line{
+                .three, .fourth{
+                    h3{
+                        margin-left: 20px;
+                    }
+                }
+                &:nth-child(3), &:nth-child(4), &:nth-child(5){
+                    .first, .second{
+                        h3{
+                            margin-left: 30px;
+                        }
+                    }
+                }
+            }
+        }
         .guns{
             .line{
                 .first, .second, .three, .fourth{
@@ -71,6 +165,9 @@
                         font-size: 14px;
                         text-align: center;
                     }
+                }
+                table{
+                    font-size: 14px;
                 }
             }
         }
@@ -81,6 +178,18 @@
                         font-size: 14px;
                     }
                 }
+            }
+        }
+        .go_back{
+            display: inline-flex;
+            font-family: 'Philosopher', sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            p{
+                margin-top: 5px;
+                margin-left: 20px;
             }
         }
         footer{
@@ -213,8 +322,7 @@
         }
         .main_shelving{
             .first_line, .second_line{
-                grid-template-columns: min-content;
-                justify-content: center;
+                grid-template-columns: repeat(3, auto);
                 .first, .second, .third{
                     &:hover{
                         img{
@@ -231,7 +339,7 @@
                         height: 150px;
                         width: auto;
                         transition: none;
-                        margin-left: 30px;
+                        margin-left: 70px;
                     }
                     p{
                         text-align: center;
@@ -240,17 +348,30 @@
                 }
             }
             .second_line{
-                .first, .second, .third{
+                .first{
                     a{
                         img, p{
-                            margin-left: -70px;
+                            margin-left: -40px;
                         }
                     }
                 }
                 .second{
                     a{
                         img{
-                            margin-left: -60px;
+                            margin-left: 90px;
+                        }
+                        p{
+                            margin-left: 30px;
+                        }
+                    }
+                }
+                .third{
+                    a{
+                        img{
+                            margin-left: 80px;
+                        }
+                        p{
+                            margin-left: 20px;
                         }
                     }
                 }

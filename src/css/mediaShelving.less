@@ -12,7 +12,7 @@
         font-family: 'Philosopher', sans-serif;
         margin-top: 50px;
     }
-    .safe_pages{
+    .shelving_pages{
         .header_background_color{
             height: 90px;
             .catalog_header{
@@ -30,34 +30,6 @@
                         &:nth-child(1){
                             margin-left: 10px;
                         }
-                    }
-                }
-            }
-        }
-        .category{
-            .line{
-                .first, .second, .three, .fourth{
-                    h3{
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-        .guns{
-            .line{
-                .first, .second, .three, .fourth{
-                    h3{
-                        font-size: 14px;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-        .seriaGar, .seriaW, .seriaEx, .akss, .seriaMas, .telega, .shkaf, .shkafTerm{
-            .line{
-                .first, .second, .three, .fourth{
-                    table{
-                        font-size: 14px;
                     }
                 }
             }
@@ -92,10 +64,10 @@
                         padding-left: 20px;
                         padding-top: 20px;
                         position: relative;
-                        top: 100px;
-                        left: 430px;
+                        top: 50px;
+                        left: 350px;
                             &:first-child{
-                                 left: 410px;
+                                 left: 330px;
                             }
                         }
                     }
@@ -111,7 +83,7 @@
         width: 90%;
         margin: 0 auto;
     }
-    .safe_pages{
+    .shelving_pages{
         .header_background_color{
             height: 90px;
             .catalog_header{
@@ -143,48 +115,50 @@
                     }
             }
         }
-        .category, .guns, .mebel, .depoziteSafe, .hotel, .received, .main_safe{
+        .about_shelving{
+            .about{
+                .image{
+                    .full{
+                        margin-left: -20px;
+                    }
+                }
+                .text{
+                    .table-text{
+                        table{
+                            font-size: 14px;
+                            margin-left: 10px;
+                            td{
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .about_mobile{
+            .mobile{
+                grid-template-columns: auto;
+                justify-content: space-around;
+                .full_image{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .about_pro{
             .line{
                 grid-template-columns: repeat(2, auto);
-                grid-template-rows: repeat(2, auto);
-                margin-top: 30px;
                 .first, .second{
-                    margin-bottom: 20px;
-                }
-                &:nth-child(11){
                     margin-bottom: 30px;
-                    margin-right: 0px;
                 }
-            }
-            .last{
-                margin-right: 0px;
-            }
-        }
-        .noEntryThird{
-            .line{
-                align-content: center;
-                align-items: center;
-                &:nth-child(8){
-                    margin-right: 0px;
+                .first, .second, .three, .fourth{
+                    table{
+                        margin-left: 20px;
+                    }
                 }
-            }
-        }
-        .NoFireCart{
-            .line{
-                margin-right: 0px;
-            }
-        }
-        .main_safe{
-            .first_line, .second_line, .third_line, .fourth_line{
-            }
-            .first_line{
-                .third{
-                    a{
-                        #akses{
-                            margin-left: 20px;
-                        }
-                        p{
-                            margin-left: 20px;
+                &:nth-child(1){
+                    .first, .second, .three, .fourth{
+                        table{
+                            margin-left: 0px;
                         }
                     }
                 }
@@ -194,16 +168,12 @@
             .footer{
                 display: grid;
                 grid-template-columns: auto auto;
-                margin-top: 50px;
+                margin-top: 30px;
                 nav{
                     margin-left: 0px;
-                    margin-top: 0px;
-                    a{
-                        font-size: 12px;
-                        margin-right: 10px;
-                        &:nth-child(2){
-                            margin-left: -10px;
-                        }
+                    margin-top: 7px;
+                    a:not(:first-child){
+                        display: none;
                     }
                     ul{
                         padding-top: 10px;
@@ -214,6 +184,32 @@
                         font-weight: normal;
                         text-transform: none;
                     }
+                    #sochial{
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            margin-left: -10px;
+                        }
+                        display: flex;
+                        a{
+                        display: inline-block;
+                        padding-left: 20px;
+                        position: relative;
+                        top: 40px;
+                        left: 630px;
+                            :first-child{
+                                 left: 260px;
+                            }
+                        }
+                    }
+                }
+                .footer_cont{
+                    font-family: 'Philosopher', sans-serif;
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-bottom: 10px;
+                    text-align: right;
+                    margin-right: 0px;
                 }
             }
         }
