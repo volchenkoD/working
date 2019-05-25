@@ -56,6 +56,7 @@ h2{
     margin: 0 auto;
 }
 /*Основная страница*/
+
 .main-page{
     max-width: 100%;
     margin: 0 auto;
@@ -206,78 +207,113 @@ h2{
             background-color: #e4dddb;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
+            grid-template-rows: 700px;
             /*начало блока*/
             .sale_block{
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto auto auto;
+                position: relative;
                 /*карточка*/
-                .card{
-                    border: 5px solid #4f095c;
-                    padding: 25px 50px;
-                    display: grid;
-                    grid-template-columns: 1fr 3fr;
-                    grid-template-rows: auto;
-
-                    img{
-                        width: 300px;
-                    }
-                    /*блок с описанием*/
-                    .card_title{
-                        position: relative;
-                        margin-left: 50px;
-                        h3{
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 20px;
-                            padding-bottom: 20px;
-                            font-weight: bold;
+                .slider{
+                    .card{
+                        border: 5px solid #4f095c;
+                        padding: 25px 50px;
+                        display: grid;
+                        grid-template-columns: 1fr 3fr;
+                        grid-template-rows: auto;
+                        position: absolute;
+                        opacity: 1;
+                        transition: all ease 1s;
+                        top: 150px;
+    
+                        img{
+                            width: 300px;
+                            height: 420px;
                         }
-                        li{
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 14px;
-                            line-height: 16px;
+                        .stail{
+                            width: 200px;
+                            height: 420px;
                         }
-                        li:nth-child(2n):not(:last-child){
+                        /*блок с описанием*/
+                        .card_title{
                             position: relative;
-                            margin-left: 250px;
-                            top: -18px;
-                        }
-                        li:last-child{
-                            margin-top: 12px;
-                        }
-                        .price{
-                            margin-top: 40px;
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 20px;
-                            font-weight: bold;
-                        }
-                        .btn{
-                            padding: 20px 70px;
-                            background-color: #10cabf;
-                            border-radius: 10px;
-                            border: none;
-                            color: white;
-                            font-family: 'Philosopher', sans-serif;
-                            font-size: 18px;
-                            margin-top: 40px;
+                            margin-left: 50px;
+                            h3{
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 20px;
+                                padding-bottom: 20px;
+                                font-weight: bold;
+                            }
+                            li{
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 14px;
+                                line-height: 16px;
+                            }
+                            li:nth-child(2n):not(:last-child){
+                                position: relative;
+                                margin-left: 250px;
+                                top: -18px;
+                            }
+                            li:last-child{
+                                margin-top: 12px;
+                            }
+                            .price{
+                                margin-top: 40px;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+                            .btn{
+                                padding: 20px 70px;
+                                background-color: #10cabf;
+                                border-radius: 10px;
+                                border: none;
+                                color: white;
+                                font-family: 'Philosopher', sans-serif;
+                                font-size: 18px;
+                                margin-top: 40px;
+                            }
                         }
                     }
+                    .stail_width{
+                        width: 100%;
+                    }
+                    .safeNoFire{
+                        img{
+                            width: auto;
+                        }
+                        .card_title{
+                            li:nth-child(2n):not(:last-child){
+                                position: relative;
+                                margin-left: 0px;
+                                top: 0px;
+                            }
+                            li{
+                                padding-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+                .slider .opacity0{
+                    opacity: 0;
                 }
                 /*Нижний скрол*/
                 .scroll{
                     display: inline-flex;
                     justify-content: center;
                     align-content: space-between;
+                    position: relative;
+                    top: 150px;
                     .circle_scroll{
                         width: 14px;
                         height: 14px;
-                        background-color: #4f095c;
+                        background-color: #10cabf;
                         border-radius: 100%;
                         margin: 30px 30px;
-                        &:hover{
-                            background-color: #10cabf;
-                        }
+                    }
+                    .active-color{
+                        background-color: #4f095c;
                     }
                 }
             }

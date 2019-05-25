@@ -97,75 +97,115 @@
             background-color: #e4dddb;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
+            grid-template-rows: 700px;
             /*начало блока*/
             .sale_block{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto;
+                position: relative;
                 /*карточка*/
-                .card{
-                    border: 5px solid #4f095c;
-                    //padding: 15px 30px;
-                    display: grid;
-                    grid-template-columns: auto auto;
-                    grid-template-rows: auto;
-
-                    img{
-                        width: 250px;
-                        height: 330px;
+                .slider{
+                    .card{
+                        border: 5px solid #4f095c;
+                        padding: 25px 50px;
+                        display: grid;
+                        grid-template-columns: 1fr 3fr;
+                        grid-template-rows: auto;
+                        position: absolute;
+                        opacity: 1;
+                        transition: all ease 1s;
+                        top: 150px;
+    
+                        img{
+                            width: 300px;
+                            height: 420px;
+                        }
+                        .stail{
+                            width: 200px;
+                            height: 420px;
+                        }
+                        /*блок с описанием*/
+                        .card_title{
+                            position: relative;
+                            margin-left: 50px;
+                            h3{
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 20px;
+                                padding-bottom: 20px;
+                                font-weight: bold;
+                            }
+                            li{
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 14px;
+                                line-height: 16px;
+                            }
+                            li:nth-child(2n):not(:last-child){
+                                position: relative;
+                                margin-left: 250px;
+                                top: -18px;
+                            }
+                            li:last-child{
+                                margin-top: 12px;
+                            }
+                            .price{
+                                margin-top: 40px;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+                            .btn{
+                                padding: 20px 70px;
+                                background-color: #10cabf;
+                                border-radius: 10px;
+                                border: none;
+                                color: white;
+                                font-family: 'Philosopher', sans-serif;
+                                font-size: 18px;
+                                margin-top: 40px;
+                            }
+                        }
                     }
-                    /*блок с описанием*/
-                    .card_title{
-                        position: relative;
-                        margin-left: 20px;
-                        h3{
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 20px;
-                            padding-bottom: 20px;
-                            font-weight: bold;
+                    .stail_width{
+                        width: 100%;
+                    }
+                    .safeNoFire{
+                        img{
+                            width: 100%;
+                            height: auto;
+                            margin-top: 50px;
                         }
-                        li{
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 12px;
-                            line-height: 16px;
-                            font-weight: bold;
-                        }
-                        li:nth-child(2n):not(:last-child){
+                        .card_title{
+                            li:nth-child(2n):not(:last-child){
                                 position: relative;
                                 margin-left: 0px;
                                 top: 0px;
-                        }
-                        li:last-child{
-                            margin-top: 0px;
-                        }
-                        .price{
-                            margin-top: 40px;
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 20px;
-                            font-weight: bold;
-                        }
-                        .btn{
-                            position: relative;
-                            padding: 15px 40px;
-                            font-size: 12px;
-                            margin-bottom: 0px;
-                            top: -70px;
-                            left: 120px;
+                            }
+                            li{
+                                padding-bottom: 5px;
+                            }
                         }
                     }
+                }
+                .slider .opacity0{
+                    opacity: 0;
                 }
                 /*Нижний скрол*/
                 .scroll{
                     display: inline-flex;
                     justify-content: center;
                     align-content: space-between;
+                    position: relative;
+                    top: 170px;
                     .circle_scroll{
                         width: 14px;
                         height: 14px;
-                        background-color: #4f095c;
+                        background-color: #10cabf;
                         border-radius: 100%;
-                        margin: 15px 30px;
-                        &:hover{
-                            background-color: #10cabf;
-                        }
+                        margin: 30px 30px;
+                    }
+                    .active-color{
+                        background-color: #4f095c;
                     }
                 }
             }
@@ -428,58 +468,83 @@
             background-color: #e4dddb;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
+            grid-template-rows: 600px;
             /*начало блока*/
             .sale_block{
                 /*карточка*/
-                .card{
-                    border: 5px solid #4f095c;
-                    //padding: 15px 30px;
-                    display: grid;
-                    grid-template-columns: auto auto;
-                    grid-template-rows: auto;
-
-                    img{
-                        width: 250px;
-                        height: 330px;
-                    }
-                    /*блок с описанием*/
-                    .card_title{
-                        position: relative;
-                        margin-left: 20px;
-                        h3{
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 20px;
-                            padding-bottom: 20px;
-                            font-weight: bold;
+                .slider{
+                    .card{
+                        border: 5px solid #4f095c;
+                        //padding: 15px 30px;
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        grid-template-rows: auto;
+                        top: 90px;
+    
+                        img{
+                            width: 250px;
+                            height: 330px;
                         }
-                        li{
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 12px;
-                            line-height: 16px;
-                            font-weight: bold;
+                        .stail{
+                            width: 150px;
+                            height: 330px;
                         }
-                        li:nth-child(2n):not(:last-child){
-                                position: relative;
-                                margin-left: 0px;
-                                top: 0px;
-                        }
-                        li:last-child{
-                            margin-top: 0px;
-                        }
-                        .price{
-                            margin-top: 40px;
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 20px;
-                            font-weight: bold;
-                        }
-                        .btn{
+                        /*блок с описанием*/
+                        .card_title{
                             position: relative;
-                            padding: 15px 40px;
-                            font-size: 12px;
-                            margin-bottom: 0px;
-                            top: -70px;
-                            left: 120px;
+                            margin-left: 20px;
+                            h3{
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 20px;
+                                padding-bottom: 20px;
+                                font-weight: bold;
+                            }
+                            li{
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 12px;
+                                line-height: 16px;
+                                font-weight: bold;
+                            }
+                            li:nth-child(2n):not(:last-child){
+                                    position: relative;
+                                    margin-left: 0px;
+                                    top: 0px;
+                            }
+                            li:last-child{
+                                margin-top: 0px;
+                            }
+                            .price{
+                                margin-top: 40px;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+                            .btn{
+                                position: relative;
+                                padding: 15px 40px;
+                                font-size: 12px;
+                                margin-bottom: 0px;
+                                top: -70px;
+                                left: 120px;
+                            }
+                        }
+                    }
+                    .stail_width{
+                        .card_img{
+                            .stail{
+                                width: 150px;
+                                height: 330px;
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                    .safeNoFire{
+                        img{
+                            width: 200px;
+                            height: auto;
+                        }
+                        .card_title{
+                            margin-bottom: -20px;
                         }
                     }
                 }
@@ -488,15 +553,12 @@
                     display: inline-flex;
                     justify-content: center;
                     align-content: space-between;
+                    top: 130px;
                     .circle_scroll{
                         width: 14px;
                         height: 14px;
-                        background-color: #4f095c;
                         border-radius: 100%;
                         margin: 15px 30px;
-                        &:hover{
-                            background-color: #10cabf;
-                        }
                     }
                 }
             }
@@ -826,58 +888,88 @@
             background-color: #e4dddb;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
+            grid-template-rows: 400px;
             justify-content: center;
             /*начало блока*/
             .sale_block{
                 /*карточка*/
-                .card{
-                    border: 1px solid #4f095c;
-                    border-radius: 10px;
-                    display: grid;
-                    grid-template-columns: auto auto;
-                    grid-template-rows: auto;
-                    padding:  0;
-                    img{
-                        width: 150px;
-                        height: 210px;
-                        margin-left: 0px;
-                        margin-top: 20px;
-                    }
-                    /*блок с описанием*/
-                    .card_title{
-                        position: relative;
-                        margin-left: 5px;
-                        h3{
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 18px;
-                            padding-bottom: 15px;
-                            font-weight: bold;
+                .slider{
+                    .card{
+                        border: 1px solid #4f095c;
+                        border-radius: 10px;
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        grid-template-rows: auto;
+                        padding:  0;
+                        top: 70px;
+                        img{
+                            width: 150px;
+                            height: 210px;
+                            margin-left: 0px;
                             margin-top: 20px;
                         }
-                        li{
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 12px;
-                            line-height: 16px;
-                            font-weight: normal;
-                            &:nth-child(2n),&:nth-child(10), &:nth-child(11), &:nth-child(12) {
-                                display: none;
+                        .stail{
+                            width: 80px;
+                            height: auto;
+                            margin-left: 20px;
+                            margin-right: 10px;
+                        }
+                        /*блок с описанием*/
+                        .card_title{
+                            position: relative;
+                            margin-left: 5px;
+                            h3{
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 18px;
+                                padding-bottom: 15px;
+                                font-weight: bold;
+                                margin-top: 20px;
+                            }
+                            li{
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 12px;
+                                line-height: 16px;
+                                font-weight: normal;
+                                &:nth-child(2n),&:nth-child(10), &:nth-child(11), &:nth-child(12) {
+                                    display: none;
+                                }
+                            }
+                            .price{
+                                margin-top: 10px;
+                                margin-left: 0px;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+                            .btn{
+                                position: relative;
+                                padding: 5px 40px;
+                                font-size: 12px;
+                                margin-bottom: -20px;
+                                top: -30px;
+                                left: -10px;
                             }
                         }
-                        .price{
-                            margin-top: 10px;
-                            margin-left: 0px;
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 20px;
-                            font-weight: bold;
+                    }
+                    .safeNoFire{
+                        img{
+                            width: 100px;
+                            height: auto;
+                            padding-top: 50px;
                         }
-                        .btn{
-                            position: relative;
-                            padding: 5px 40px;
-                            font-size: 12px;
-                            margin-bottom: -20px;
-                            top: -30px;
-                            left: -10px;
+                        .card_title{
+                            li:nth-child(2n):not(:last-child){
+                                position: relative;
+                                margin-left: 0px;
+                                top: 0px;
+                            }
+                            li{
+                                padding-bottom: 2px;
+                            }
+                            li:nth-child(7){
+                                display: none;
+                            }
+
                         }
                     }
                 }
@@ -886,6 +978,7 @@
                     display: inline-flex;
                     justify-content: center;
                     align-content: space-between;
+                    top: 70px;
                     .circle_scroll{
                         width: 14px;
                         height: 14px;
@@ -893,9 +986,6 @@
                         border-radius: 100%;
                         margin: 20px;
                         margin-left: -10px;
-                        &:hover{
-                            background-color: #10cabf;
-                        }
                     }
                 }
             }
