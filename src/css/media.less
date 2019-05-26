@@ -400,16 +400,61 @@
             .header_background_color{
                 height: 90px;
                 .header{
-
-                    .logo{
-                        margin-top: 5px;
-                        margin-left: -150px;
-                        img{
-                            width: 60px;
-                        }
-                    }
                     nav{
-                        display: none;
+                        margin-top: 15px;
+                        .logo{
+                            margin-top: 5px;
+                            margin-left: 0px;
+                            img{
+                                width: 54px;
+                            }
+                        }
+                        .nav__links{
+                            position: absolute;
+                            right: 0px;
+                            height: 30vh;
+                            width: 50%;
+                            top: 8.75vh;
+                            background-color: rgba(202, 194, 178, 0.6);
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            z-index: 5;
+                            transform: translateX(100%);
+                            transition: transform 0.5s ease-in;
+                            li{
+                                opacity: 0;
+                            }
+                            a{
+                                font-size: 14px;
+                                margin-right: 0px;
+                                margin-top: -50px;
+                                &:hover{
+                                    color: #5a1a4a;
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                        .burger{
+                            margin-top: -10px;
+                            margin-left: 600px;
+                            display: block;
+                            cursor: pointer;
+                        }
+                        .toggle{
+                            .line1{
+                                transform: rotate(-45deg) translate(-5px, 6px);
+                            }
+                            .line2{
+                                opacity: 0;
+                            }
+                            .line3{
+                                transform: rotate(45deg) translate(-5px, -6px);
+                            }
+                        }
+                        .nav__active{
+                            transform: translateX(0%);
+                        }
                     }
                 }
             }
@@ -462,6 +507,9 @@
                     font-size: 12px;
                     margin-bottom: 45px;
                 }
+            }
+            .opacityFirstPage{
+                opacity: 0.2;
             }
         }
         .sale_bacground{
@@ -791,6 +839,16 @@
             }
         }
     }
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
 }
 /*для телефонов*/
 @media (min-width: 360px) and (max-width : 480px){
@@ -798,6 +856,9 @@
         //max-width: 100%;
         width: 320px;
         margin: 0 auto;
+    }
+    body{
+        overflow-x: hidden;
     }
     h2{
         font-size: 16px;
@@ -817,20 +878,60 @@
             .header_background_color{
                 height: 70px;
                 .header{
-                    display: grid;
-                    grid-template-columns: none;
-                    grid-template-rows: auto;
-                    justify-items: baseline;
-                    align-items: flex-start;
-                    .logo{
-                        margin-top: 0px;
-                        margin-left: 0px;
-                        img{
-                            width: 54px;
-                        }
-                    }
                     nav{
-                        display: none;
+                        .logo{
+                            margin-top: 5px;
+                            margin-left: 0px;
+                            img{
+                                width: 54px;
+                            }
+                        }
+                        .nav__links{
+                            position: absolute;
+                            right: 0px;
+                            height: 30vh;
+                            width: 50%;
+                            top: 11vh;
+                            background-color: rgba(202, 194, 178, 0.6);
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            z-index: 5;
+                            transform: translateX(100%);
+                            transition: transform 0.5s ease-in;
+                            li{
+                                opacity: 0;
+                            }
+                            a{
+                                font-size: 14px;
+                                margin-right: 0px;
+                                margin-top: -50px;
+                                &:hover{
+                                    color: #5a1a4a;
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                        .burger{
+                            margin-top: -10px;
+                            margin-left: 200px;
+                            display: block;
+                            cursor: pointer;
+                        }
+                        .toggle{
+                            .line1{
+                                transform: rotate(-45deg) translate(-5px, 6px);
+                            }
+                            .line2{
+                                opacity: 0;
+                            }
+                            .line3{
+                                transform: rotate(45deg) translate(-5px, -6px);
+                            }
+                        }
+                        .nav__active{
+                            transform: translateX(0%);
+                        }
                     }
                 }
             }
@@ -883,6 +984,9 @@
                     margin-bottom: 50px;
                 }
             }
+        }
+        .opacityFirstPage{
+            opacity: 0.2;
         }
         .sale_bacground{
             background-color: #e4dddb;
@@ -1189,6 +1293,16 @@
                     margin-left: -20px;
                 }
             }
+        }
+    }
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
         }
     }
 }
