@@ -18,4 +18,4 @@ function slider() {
     }
 }
 document.querySelector('.slider').onclick = slider;
-//setInterval(slider, 5000);
+setInterval(slider, 5000);
