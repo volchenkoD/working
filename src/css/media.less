@@ -839,16 +839,16 @@
             }
         }
     }
-    // @keyframes navLinkFade {
-    //     from{
-    //         opacity: 0;
-    //         transform: translateX(50px);
-    //     }
-    //     to{
-    //         opacity: 1;
-    //         transform: translateX(0px);
-    //     }
-    // }
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
 }
 /*для телефонов*/
 @media (min-width: 360px) and (max-width : 480px){
@@ -897,6 +897,7 @@
                             flex-direction: column;
                             align-items: center;
                             z-index: 5;
+                            display: none;
                             transform: translateX(100%);
                             transition: transform 0.5s ease-in;
                             li{
@@ -931,6 +932,8 @@
                         }
                         .nav__active{
                             transform: translateX(0%);
+                            display: block;
+                            display: flex;
                         }
                     }
                 }
