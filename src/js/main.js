@@ -44,3 +44,10 @@ function navSlide() {
     //burger animation
 }
 navSlide();
+function screenSlider(){
+    if(window.screen < 481){
+        alert("hey");
+    }
+    alert('hi');
+}
+screenSlider();
