@@ -1,4 +1,5 @@
 var dives = document.querySelectorAll('.slider .card');
+console.log(dives);
 var dotes = document.querySelectorAll('.scroll .circle_scroll');
 var current = 0;
 var index = 0;
@@ -44,10 +45,21 @@ function navSlide() {
     //burger animation
 }
 navSlide();
+var sliderMin = document.querySelectorAll('.about_hits .hit_goods');
+var pointer = 0;
+console.log(sliderMin);
 function screenSlider(){
-    if(window.screen < 481){
-        alert("hey");
+    if(screen.width < 480){
+        for(var i = 0; i < sliderMin.length; i++){
+            sliderMin[i].classList.add("opacity0");
+        }
+        sliderMin[pointer].classList.remove("opacity0");
+        if(pointer + 1 == sliderMin.length){
+            pointer = 0;
+        }else{
+            pointer++;
+        }
     }
-    alert('hi');
 }
-screenSlider();
+document.querySelector('.about_hits').onclick = screenSlider;
+setInterval(screenSlider, 5000);
